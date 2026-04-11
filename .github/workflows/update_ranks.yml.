@@ -2,13 +2,15 @@ name: Hourly Player Rank Update
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour at the top of the hour
-  workflow_dispatch: # Allows you to run it manually for testing
+    - cron: '0 * * * *'
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
