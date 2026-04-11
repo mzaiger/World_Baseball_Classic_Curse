@@ -7,51 +7,55 @@
 <style>
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background-color: #121212; /* Dark background */
-        color: #000000;
-        padding: 20px;
+        background-color: #121212;
+        color: #ffffff;
+        padding: 10px;
     }
     h1 {
         text-align: center;
-        color: #ffffff; /* Keeping title white for visibility */
+        color: #ffffff;
+        font-size: 1.5rem;
     }
     table {
         width: 100%;
-        max-width: 1000px;
+        max-width: 600px; /* Narrower for mobile */
         margin: 0 auto;
         border-collapse: collapse;
-        background: #1e1e1e; /* Darker table body */
+        background: #1e1e1e;
         box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        table-layout: fixed; /* Ensures even spacing */
     }
     th {
         background-color: #333;
         color: #ffffff;
-        font-weight: bold; /* Bolded letters */
-        text-align: left;
-        padding: 10px 12px;
-        font-size: 0.9rem;
-        border: 1px solid #ffffff; /* White border around each cell */
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 0.8rem;
+        border: 1px solid #ffffff;
     }
     td {
-        padding: 6px 12px;
-        border: 1px solid #ffffff; /* White border around each cell */
+        padding: 8px;
+        border: 1px solid #ffffff;
         font-size: 0.85rem;
-        color: #ffffff; /* Black text */
-        font-weight: bold; /* Bolded letters */
+        color: #ffffff; /* White letters */
+        font-weight: bold;
+        word-wrap: break-word;
     }
-    /* Adjusted highlight colors so black text is legible */
-    .worse {
-        background-color: #ff6b6b !important; /* Brighter red for contrast */
+    /* Sub-row styling for labels or secondary data */
+    .sub-info {
+        font-size: 0.75rem;
+        text-align: center;
     }
-    .better {
-        background-color: #51cf66 !important; /* Brighter green for contrast */
+    .worse td {
+        background-color: #ff6b6b !important;
     }
-    tr:hover {
-        background-color: #2a2a2a;
+    .better td {
+        background-color: #51cf66 !important;
     }
-    /* Fallback for standard rows to ensure black text is visible on dark background */
+    /* Fallback for standard rows */
     tr:not(.worse):not(.better) td {
-        background-color: #cccccc; 
+        background-color: #444444; 
     }
 </style>
 </head>
@@ -62,12 +66,9 @@
     <table>
         <thead>
             <tr>
-                <th>Player</th>
-                <th>MLB Team</th>
-                <th>WBC Team</th>
-                <th>Fantasy Team</th>
-                <th>Current Rank</th>
-                <th>Preseason Rank</th>
+                <th style="width: 50%;">Player</th>
+                <th style="width: 25%;">Current</th>
+                <th style="width: 25%;">Preseason</th>
             </tr>
         </thead>
         <tbody id="tableBody">
@@ -87,27 +88,38 @@
                 tableBody.innerHTML = '';
 
                 data.forEach(player => {
-                    const tr = document.createElement('tr');
                     const pre = parseInt(player.preseason_rank);
                     const cur = parseInt(player.current_rank);
+                    let statusClass = '';
 
-                    // Red-Green structure: Green if rank improved (pre > cur), Red if dropped (cur > pre)
                     if (cur > pre) {
-                        tr.classList.add('worse');
+                        statusClass = 'worse';
                     } else if (pre > cur) {
-                        tr.classList.add('better');
+                        statusClass = 'better';
                     }
 
-                    // Added MLB Team (ORG) and WBC Team (WBC TEAM)
-                    tr.innerHTML = `
+                    // Top Row: Player, Current, Preseason
+                    const topRow = document.createElement('tr');
+                    topRow.className = statusClass;
+                    topRow.innerHTML = `
                         <td>${player.name_raw}</td>
-                        <td>${player.ORG}</td>
-                        <td>${player["WBC TEAM"]}</td>
-                        <td>${player.fantasy_team}</td>
-                        <td>${player.current_rank}</td>
-                        <td>${player.preseason_rank}</td>
+                        <td style="text-align:center;">${player.current_rank}</td>
+                        <td style="text-align:center;">${player.preseason_rank}</td>
                     `;
-                    tableBody.appendChild(tr);
+
+                    // Bottom Row: WBC Team, MLB Team, Fantasy Team (Spans all columns)
+                    const bottomRow = document.createElement('tr');
+                    bottomRow.className = `${statusClass} sub-info`;
+                    bottomRow.innerHTML = `
+                        <td colspan="3">
+                            WBC: ${player["WBC TEAM"]} | 
+                            MLB: ${player.ORG} | 
+                            FT: ${player.fantasy_team}
+                        </td>
+                    `;
+
+                    tableBody.appendChild(topRow);
+                    tableBody.appendChild(bottomRow);
                 });
             } catch (error) {
                 console.error("Unable to load JSON:", error);
