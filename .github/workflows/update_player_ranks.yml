@@ -1,8 +1,8 @@
-name: Hourly Player Rank Update
+name: Daily Player Rank Update
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 jobs:
