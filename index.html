@@ -4,54 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Baseball Classic Curse</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #121212; /* Dark background */
-            color: #e0e0e0; /* Light text */
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #ffffff;
-        }
-        table {
-            width: 100%;
-            max-width: 1000px; /* Wider to fit new columns */
-            margin: 0 auto;
-            border-collapse: collapse;
-            background: #1e1e1e; /* Darker table body */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-        }
-        th {
-            background-color: #333;
-            color: #ffffff;
-            text-align: left;
-            padding: 10px 12px;
-            font-size: 0.9rem;
-            border-bottom: 2px solid #444;
-        }
-        td {
-            padding: 6px 12px;
-            border-bottom: 1px solid #333;
-            font-size: 0.85rem;
-        }
-        /* Specific coloring for rank movement adjusted for Dark Mode */
-        .worse {
-            background-color: #3d1c1c !important; /* Muted red-dark */
-            color: #ffbaba;
-        }
-        .better {
-            background-color: #1c3d1c !important; /* Muted green-dark */
-            color: #baffba;
-        }
-        tr:last-child td {
-            border-bottom: none;
-        }
-        tr:hover {
-            background-color: #2a2a2a;
-        }
-    </style>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #ffffff; /* Changed to white */
+        color: #000000; /* Changed font to black */
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #000000; /* Header to black */
+    }
+    table {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background: #ffffff;
+        /* Adding a dark shadow so the white table stands out if the background is slightly off-white */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border: 1px solid #ffffff; 
+    }
+    th {
+        background-color: #f2f2f2; /* Light gray for headers */
+        color: #000000; /* Black text */
+        text-align: left;
+        padding: 10px 12px;
+        font-size: 0.9rem;
+        border: 1px solid #ffffff; /* White border for each cell */
+    }
+    td {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        color: #000000; /* Black text */
+        border: 1px solid #ffffff; /* White border for each cell */
+    }
+    /* Adjusted highlight colors for black text visibility */
+    .worse {
+        background-color: #ffcccc !important; /* Light red */
+        color: #000000;
+    }
+    .better {
+        background-color: #ccffcc !important; /* Light green */
+        color: #000000;
+    }
+    tr:hover {
+        background-color: #f9f9f9;
+    }
+</style>
 </head>
 <body>
 
