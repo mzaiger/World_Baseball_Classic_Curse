@@ -80,8 +80,7 @@
     <script>
         async function loadPlayerData() {
             try {
-                const response = await fetch('player_ranks.json');
-                const data = await response.json();
+        const response = await fetch(`player_ranks.json?t=${new Date().getTime()}`);                	const data = await response.json();
 
                 data.sort((a, b) => parseInt(a.preseason_rank) - parseInt(b.preseason_rank));
 
