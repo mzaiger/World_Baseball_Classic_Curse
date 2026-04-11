@@ -1,120 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Baseball Classic Curse</title>
 <style>
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background-color: #121212; /* Dark background */
+        background-color: #121212;
         color: #000000;
-        padding: 20px;
+        padding: 10px;
     }
     h1 {
         text-align: center;
-        color: #ffffff; /* Keeping title white for visibility */
-    }
-    table {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        border-collapse: collapse;
-        background: #1e1e1e; /* Darker table body */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    }
-    th {
-        background-color: #333;
         color: #ffffff;
-        font-weight: bold; /* Bolded letters */
-        text-align: left;
-        padding: 10px 12px;
+        font-size: 1.5rem;
+    }
+
+    /* Container for the rows */
+    #playerContainer {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Base Row Style */
+    .player-row {
+        background-color: #cccccc;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        display: flex;
+        flex-direction: column; /* Stack into 2 lines on mobile */
+        font-weight: bold;
         font-size: 0.9rem;
-        border: 1px solid #ffffff; /* White border around each cell */
     }
-    td {
-        padding: 6px 12px;
-        border: 1px solid #ffffff; /* White border around each cell */
-        font-size: 0.85rem;
-        color: #ffffff; /* Black text */
-        font-weight: bold; /* Bolded letters */
+
+    /* Layout for the 2 lines */
+    .line-one, .line-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    /* Adjusted highlight colors so black text is legible */
-    .worse {
-        background-color: #ff6b6b !important; /* Brighter red for contrast */
-    }
-    .better {
-        background-color: #51cf66 !important; /* Brighter green for contrast */
-    }
-    tr:hover {
-        background-color: #2a2a2a;
-    }
-    /* Fallback for standard rows to ensure black text is visible on dark background */
-    tr:not(.worse):not(.better) td {
-        background-color: #cccccc; 
+
+    .line-one { margin-bottom: 4px; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 4px; }
+    
+    .player-name { font-size: 1rem; flex: 2; }
+    .wbc-tag { font-size: 0.75rem; background: rgba(255,255,255,0.3); padding: 2px 6px; border-radius: 4px; }
+    .rank-info { text-align: right; font-size: 0.8rem; }
+
+    /* Color States */
+    .worse { background-color: #ff6b6b !important; }
+    .better { background-color: #51cf66 !important; }
+
+    /* Desktop View: Revert to single line if screen is wider */
+    @media (min-width: 600px) {
+        .player-row { flex-direction: row; justify-content: space-between; }
+        .line-one, .line-two { border: none; margin: 0; padding: 0; flex: 1; }
+        .line-two { justify-content: flex-end; gap: 20px; }
     }
 </style>
-</head>
+
 <body>
-
     <h1>World Baseball Classic Curse</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Player</th>
-                <th>MLB Team</th>
-                <th>WBC Team</th>
-                <th>Fantasy Team</th>
-                <th>Current Rank</th>
-                <th>Preseason Rank</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-            </tbody>
-    </table>
+    <div id="playerContainer">
+        </div>
 
     <script>
         async function loadPlayerData() {
             try {
                 const response = await fetch('player_ranks.json');
                 const data = await response.json();
-
-                // Order by Preseason Rank (Smallest to Greatest)
                 data.sort((a, b) => parseInt(a.preseason_rank) - parseInt(b.preseason_rank));
 
-                const tableBody = document.getElementById('tableBody');
-                tableBody.innerHTML = '';
+                const container = document.getElementById('playerContainer');
+                container.innerHTML = '';
 
                 data.forEach(player => {
-                    const tr = document.createElement('tr');
+                    const row = document.createElement('div');
+                    row.className = 'player-row';
+                    
                     const pre = parseInt(player.preseason_rank);
                     const cur = parseInt(player.current_rank);
 
-                    // Red-Green structure: Green if rank improved (pre > cur), Red if dropped (cur > pre)
-                    if (cur > pre) {
-                        tr.classList.add('worse');
-                    } else if (pre > cur) {
-                        tr.classList.add('better');
-                    }
+                    if (cur > pre) row.classList.add('worse');
+                    else if (pre > cur) row.classList.add('better');
 
-                    // Added MLB Team (ORG) and WBC Team (WBC TEAM)
-                    tr.innerHTML = `
-                        <td>${player.name_raw}</td>
-                        <td>${player.ORG}</td>
-                        <td>${player["WBC TEAM"]}</td>
-                        <td>${player.fantasy_team}</td>
-                        <td>${player.current_rank}</td>
-                        <td>${player.preseason_rank}</td>
+                    row.innerHTML = `
+                        <div class="line-one">
+                            <span class="player-name">${player.name_raw}</span>
+                            <span class="wbc-tag">${player["WBC TEAM"]}</span>
+                        </div>
+                        <div class="line-two">
+                            <span>${player.ORG} | ${player.fantasy_team}</span>
+                            <span class="rank-info">Rank: ${cur} (Pre: ${pre})</span>
+                        </div>
                     `;
-                    tableBody.appendChild(tr);
+                    container.appendChild(row);
                 });
             } catch (error) {
-                console.error("Unable to load JSON:", error);
+                console.error("Error:", error);
             }
         }
-
         loadPlayerData();
     </script>
 </body>
-</html>
