@@ -14,46 +14,47 @@
     h1 {
         text-align: center;
         color: #ffffff;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     table {
         width: 100%;
-        max-width: 600px; /* Narrower for mobile */
+        max-width: 800px;
         margin: 0 auto;
         border-collapse: collapse;
         background: #1e1e1e;
         box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-        table-layout: fixed; /* Ensures even spacing */
     }
     th {
         background-color: #333;
         color: #ffffff;
         font-weight: bold;
-        text-align: center;
-        padding: 10px 5px;
+        text-align: left;
+        padding: 10px;
         font-size: 0.8rem;
         border: 1px solid #ffffff;
     }
     td {
         padding: 8px;
         border: 1px solid #ffffff;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         color: #ffffff; /* White letters */
         font-weight: bold;
-        word-wrap: break-word;
+        vertical-align: top; /* Keeps name at the top of the cell */
     }
-    /* Sub-row styling for labels or secondary data */
-    .sub-info {
-        font-size: 0.75rem;
-        text-align: center;
+    /* Sub-text for the team info */
+    .team-info {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: normal;
+        margin-top: 4px;
+        opacity: 0.9;
     }
-    .worse td {
+    .worse {
         background-color: #ff6b6b !important;
     }
-    .better td {
+    .better {
         background-color: #51cf66 !important;
     }
-    /* Fallback for standard rows */
     tr:not(.worse):not(.better) td {
         background-color: #444444; 
     }
@@ -66,13 +67,13 @@
     <table>
         <thead>
             <tr>
-                <th style="width: 50%;">Player</th>
-                <th style="width: 25%;">Current</th>
-                <th style="width: 25%;">Preseason</th>
+                <th style="width: 60%;">Player</th>
+                <th style="width: 20%;">Current</th>
+                <th style="width: 20%;">Pre</th>
             </tr>
         </thead>
         <tbody id="tableBody">
-            </tbody>
+        </tbody>
     </table>
 
     <script>
@@ -81,45 +82,33 @@
                 const response = await fetch('player_ranks.json');
                 const data = await response.json();
 
-                // Order by Preseason Rank (Smallest to Greatest)
                 data.sort((a, b) => parseInt(a.preseason_rank) - parseInt(b.preseason_rank));
 
                 const tableBody = document.getElementById('tableBody');
                 tableBody.innerHTML = '';
 
                 data.forEach(player => {
+                    const tr = document.createElement('tr');
                     const pre = parseInt(player.preseason_rank);
                     const cur = parseInt(player.current_rank);
-                    let statusClass = '';
 
                     if (cur > pre) {
-                        statusClass = 'worse';
+                        tr.classList.add('worse');
                     } else if (pre > cur) {
-                        statusClass = 'better';
+                        tr.classList.add('better');
                     }
 
-                    // Top Row: Player, Current, Preseason
-                    const topRow = document.createElement('tr');
-                    topRow.className = statusClass;
-                    topRow.innerHTML = `
-                        <td>${player.name_raw}</td>
+                    tr.innerHTML = `
+                        <td>
+                            ${player.name_raw}
+                            <span class="team-info">
+                                (${player["WBC TEAM"]}, ${player.ORG}, ${player.fantasy_team})
+                            </span>
+                        </td>
                         <td style="text-align:center;">${player.current_rank}</td>
                         <td style="text-align:center;">${player.preseason_rank}</td>
                     `;
-
-                    // Bottom Row: WBC Team, MLB Team, Fantasy Team (Spans all columns)
-                    const bottomRow = document.createElement('tr');
-                    bottomRow.className = `${statusClass} sub-info`;
-                    bottomRow.innerHTML = `
-                        <td colspan="3">
-                            WBC: ${player["WBC TEAM"]} | 
-                            MLB: ${player.ORG} | 
-                            FT: ${player.fantasy_team}
-                        </td>
-                    `;
-
-                    tableBody.appendChild(topRow);
-                    tableBody.appendChild(bottomRow);
+                    tableBody.appendChild(tr);
                 });
             } catch (error) {
                 console.error("Unable to load JSON:", error);
