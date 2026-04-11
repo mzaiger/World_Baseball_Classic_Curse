@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Baseball Classic Curse</title>
 <style>
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -101,3 +107,67 @@
         loadPlayerData();
     </script>
 </body>
+</head>
+<body>
+
+    <h1>World Baseball Classic Curse</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>MLB Team</th>
+                <th>WBC Team</th>
+                <th>Fantasy Team</th>
+                <th>Current Rank</th>
+                <th>Preseason Rank</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            </tbody>
+    </table>
+
+    <script>
+        async function loadPlayerData() {
+            try {
+                const response = await fetch('player_ranks.json');
+                const data = await response.json();
+
+                // Order by Preseason Rank (Smallest to Greatest)
+                data.sort((a, b) => parseInt(a.preseason_rank) - parseInt(b.preseason_rank));
+
+                const tableBody = document.getElementById('tableBody');
+                tableBody.innerHTML = '';
+
+                data.forEach(player => {
+                    const tr = document.createElement('tr');
+                    const pre = parseInt(player.preseason_rank);
+                    const cur = parseInt(player.current_rank);
+
+                    // Red-Green structure: Green if rank improved (pre > cur), Red if dropped (cur > pre)
+                    if (cur > pre) {
+                        tr.classList.add('worse');
+                    } else if (pre > cur) {
+                        tr.classList.add('better');
+                    }
+
+                    // Added MLB Team (ORG) and WBC Team (WBC TEAM)
+                    tr.innerHTML = `
+                        <td>${player.name_raw}</td>
+                        <td>${player.ORG}</td>
+                        <td>${player["WBC TEAM"]}</td>
+                        <td>${player.fantasy_team}</td>
+                        <td>${player.current_rank}</td>
+                        <td>${player.preseason_rank}</td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+            } catch (error) {
+                console.error("Unable to load JSON:", error);
+            }
+        }
+
+        loadPlayerData();
+    </script>
+</body>
+</html>
