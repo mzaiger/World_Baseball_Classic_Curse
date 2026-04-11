@@ -1,6 +1,6 @@
 [
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Nolan Arenado",
     "POS": "3B",
@@ -13,7 +13,7 @@
     "status": "ok"
   },
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "United States",
     "PLAYER": "Corbin Carroll",
     "POS": "LF",
@@ -26,7 +26,7 @@
     "status": "ok"
   },
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Ketel Marte",
     "POS": "2B",
@@ -39,7 +39,7 @@
     "status": "ok"
   },
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Geraldo Perdomo",
     "POS": "SS",
@@ -52,33 +52,33 @@
     "status": "ok"
   },
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Eduardo Rodriguez",
     "POS": "LHP",
     "AGE": "32.9",
     "name_raw": "Eduardo Rodriguez",
-    "preseason_rank": "1518",
+    "preseason_rank": "1520",
     "current_rank": "98",
     "fantasy_team": "Sidd Finch Version 24",
     "yahoo_key": "469.p.9546",
     "status": "ok"
   },
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Carlos Santana",
     "POS": "1B",
     "AGE": "39.9",
     "name_raw": "Carlos Santana",
-    "preseason_rank": "1245",
+    "preseason_rank": "1255",
     "current_rank": "845",
     "fantasy_team": "None",
     "yahoo_key": "469.p.8619",
     "status": "ok"
   },
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "Canada",
     "PLAYER": "Michael Soroka",
     "POS": "RHP",
@@ -91,7 +91,7 @@
     "status": "ok"
   },
   {
-    "ORG": "AZ",
+    "ORG": "Arizona Diamondbacks",
     "WBC TEAM": "Mexico",
     "PLAYER": "Alek Thomas",
     "POS": "CF",
@@ -104,59 +104,59 @@
     "status": "ok"
   },
   {
-    "ORG": "ATH",
+    "ORG": "Oakland Athletics",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Elvis Alvarado",
     "POS": "RHP",
     "AGE": "27.0",
     "name_raw": "Elvis Alvarado",
-    "preseason_rank": "602",
+    "preseason_rank": "609",
     "current_rank": "397",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60180",
     "status": "ok"
   },
   {
-    "ORG": "ATH",
+    "ORG": "Oakland Athletics",
     "WBC TEAM": "Canada",
     "PLAYER": "Denzel Clarke",
     "POS": "OF",
     "AGE": "25.8",
     "name_raw": "Denzel Clarke",
-    "preseason_rank": "1616",
+    "preseason_rank": "1622",
     "current_rank": "713",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12504",
     "status": "ok"
   },
   {
-    "ORG": "ATH",
+    "ORG": "Oakland Athletics",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Carlos Cortes",
     "POS": "LF",
     "AGE": "28.7",
     "name_raw": "Carlos Cortes",
-    "preseason_rank": "1586",
+    "preseason_rank": "1587",
     "current_rank": "609",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12488",
     "status": "ok"
   },
   {
-    "ORG": "ATH",
+    "ORG": "Oakland Athletics",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Darell Hernaiz",
     "POS": "3B",
     "AGE": "24.6",
     "name_raw": "Darell Hernaiz",
-    "preseason_rank": "1627",
+    "preseason_rank": "1626",
     "current_rank": "792",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60638",
     "status": "ok"
   },
   {
-    "ORG": "ATH",
+    "ORG": "Oakland Athletics",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Luis Severino",
     "POS": "RHP",
@@ -169,20 +169,20 @@
     "status": "ok"
   },
   {
-    "ORG": "ATH",
+    "ORG": "Oakland Athletics",
     "WBC TEAM": "Chinese Taipei",
     "PLAYER": "Chen Zhong-Ao Zhuang",
     "POS": "RHP",
     "AGE": "25.5",
     "name_raw": "Chen Zhong-Ao Zhuang",
-    "preseason_rank": "845",
+    "preseason_rank": "844",
     "current_rank": "2260",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60732",
     "status": "ok"
   },
   {
-    "ORG": "ATL",
+    "ORG": "Atlanta Braves",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Ronald Acuna Jr.",
     "POS": "RF",
@@ -195,7 +195,7 @@
     "status": "ok"
   },
   {
-    "ORG": "ATL",
+    "ORG": "Atlanta Braves",
     "WBC TEAM": "Netherlands",
     "PLAYER": "Ozzie Albies",
     "POS": "2B",
@@ -208,7 +208,7 @@
     "status": "ok"
   },
   {
-    "ORG": "ATL",
+    "ORG": "Atlanta Braves",
     "WBC TEAM": "Netherlands",
     "PLAYER": "Jurickson Profar",
     "POS": "LF",
@@ -221,7 +221,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BAL",
+    "ORG": "Baltimore Orioles",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Jose Espada",
     "POS": "RHP",
@@ -234,7 +234,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BAL",
+    "ORG": "Baltimore Orioles",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Rico Garcia",
     "POS": "RHP",
@@ -247,7 +247,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BAL",
+    "ORG": "Baltimore Orioles",
     "WBC TEAM": "United States",
     "PLAYER": "Gunnar Henderson",
     "POS": "SS",
@@ -260,7 +260,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BAL",
+    "ORG": "Baltimore Orioles",
     "WBC TEAM": "Israel",
     "PLAYER": "Dean Kremer",
     "POS": "RHP",
@@ -273,7 +273,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BAL",
+    "ORG": "Baltimore Orioles",
     "WBC TEAM": "Canada",
     "PLAYER": "Tyler O",
     "POS": "OF",
@@ -286,7 +286,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Wilyer Abreu",
     "POS": "RF",
@@ -299,7 +299,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Brayan Bello",
     "POS": "RHP",
@@ -312,7 +312,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Willson Contreras",
     "POS": "1B",
@@ -325,7 +325,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Mexico",
     "PLAYER": "Jarren Duran",
     "POS": "CF",
@@ -338,7 +338,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Great Britain",
     "PLAYER": "Nate Eaton",
     "POS": "3B",
@@ -351,7 +351,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Jovani Moran",
     "POS": "LHP",
@@ -364,7 +364,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Netherlands",
     "PLAYER": "Ceddanne Rafaela",
     "POS": "UTL",
@@ -377,7 +377,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Ranger Suarez",
     "POS": "LHP",
@@ -390,7 +390,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Italy",
     "PLAYER": "Greg Weissert",
     "POS": "RHP",
@@ -403,7 +403,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "United States",
     "PLAYER": "Garrett Whitlock",
     "POS": "RHP",
@@ -416,7 +416,7 @@
     "status": "ok"
   },
   {
-    "ORG": "BOS",
+    "ORG": "Boston Red Sox",
     "WBC TEAM": "Japan",
     "PLAYER": "Masataka Yoshida",
     "POS": "LF",
@@ -429,7 +429,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "Panama",
     "PLAYER": "Miguel Amaya",
     "POS": "C",
@@ -442,7 +442,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "Mexico",
     "PLAYER": "Javier Assad",
     "POS": "RHP",
@@ -455,7 +455,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "United States",
     "PLAYER": "Matthew Boyd",
     "POS": "LHP",
@@ -468,7 +468,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "United States",
     "PLAYER": "Alex Bregman",
     "POS": "3B",
@@ -481,7 +481,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "United States",
     "PLAYER": "Pete Crow-Armstrong",
     "POS": "CF",
@@ -494,7 +494,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Daniel Palencia",
     "POS": "RHP",
@@ -507,7 +507,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "Japan",
     "PLAYER": "Seiya Suzuki",
     "POS": "RF",
@@ -520,7 +520,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CHC",
+    "ORG": "Chicago Cubs",
     "WBC TEAM": "Canada",
     "PLAYER": "Jameson Taillon",
     "POS": "RHP",
@@ -533,7 +533,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CIN",
+    "ORG": "Cincinnati Reds",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Edwin Arroyo",
     "POS": "SS",
@@ -546,7 +546,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CIN",
+    "ORG": "Cincinnati Reds",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Eugenio Suarez",
     "POS": "3B",
@@ -559,7 +559,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CLE",
+    "ORG": "Cleveland Guardians",
     "WBC TEAM": "Panama",
     "PLAYER": "Logan Allen",
     "POS": "LHP",
@@ -572,7 +572,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CLE",
+    "ORG": "Cleveland Guardians",
     "WBC TEAM": "Italy",
     "PLAYER": "Matt Festa",
     "POS": "RHP",
@@ -585,7 +585,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CLE",
+    "ORG": "Cleveland Guardians",
     "WBC TEAM": "Canada",
     "PLAYER": "Bo Naylor",
     "POS": "C",
@@ -598,7 +598,7 @@
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Mexico",
     "PLAYER": "Brennan Bernardino",
     "POS": "LHP",
@@ -611,7 +611,7 @@
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Willi Castro",
     "POS": "LF",
@@ -624,7 +624,7 @@
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Israel",
     "PLAYER": "Troy Johnston",
     "POS": "LF",
@@ -637,7 +637,7 @@
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Canada",
     "PLAYER": "Edouard Julien",
     "POS": "2B",
@@ -650,20 +650,20 @@
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Italy",
     "PLAYER": "Michael Lorenzen",
     "POS": "RHP",
     "AGE": "34.2",
     "name_raw": "Michael Lorenzen",
-    "preseason_rank": "1424",
+    "preseason_rank": "1423",
     "current_rank": "853",
     "fantasy_team": "None",
     "yahoo_key": "469.p.9949",
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Antonio Senzatela",
     "POS": "RHP",
@@ -676,7 +676,7 @@
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Ezequiel Tovar",
     "POS": "SS",
@@ -689,7 +689,7 @@
     "status": "ok"
   },
   {
-    "ORG": "COL",
+    "ORG": "Colorado Rockies",
     "WBC TEAM": "Mexico",
     "PLAYER": "Victor Vodnik",
     "POS": "RHP",
@@ -702,7 +702,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CWS",
+    "ORG": "Chicago White Sox",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Seranthony Dominguez",
     "POS": "RHP",
@@ -715,7 +715,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CWS",
+    "ORG": "Chicago White Sox",
     "WBC TEAM": "Australia",
     "PLAYER": "Curtis Mead",
     "POS": "IF",
@@ -728,7 +728,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CWS",
+    "ORG": "Chicago White Sox",
     "WBC TEAM": "Japan",
     "PLAYER": "Munetaka Murakami",
     "POS": "1B",
@@ -741,7 +741,7 @@
     "status": "ok"
   },
   {
-    "ORG": "CWS",
+    "ORG": "Chicago White Sox",
     "WBC TEAM": "Italy",
     "PLAYER": "Kyle Teel",
     "POS": "C",
@@ -754,7 +754,7 @@
     "status": "ok"
   },
   {
-    "ORG": "DET",
+    "ORG": "Detroit Tigers",
     "WBC TEAM": "Netherlands",
     "PLAYER": "Kenley Jansen",
     "POS": "RHP",
@@ -767,7 +767,7 @@
     "status": "ok"
   },
   {
-    "ORG": "DET",
+    "ORG": "Detroit Tigers",
     "WBC TEAM": "Korea",
     "PLAYER": "Jahmai Jones",
     "POS": "LF",
@@ -780,7 +780,7 @@
     "status": "ok"
   },
   {
-    "ORG": "DET",
+    "ORG": "Detroit Tigers",
     "WBC TEAM": "Chinese Taipei",
     "PLAYER": "Hao-Yu Lee",
     "POS": "IF",
@@ -793,7 +793,7 @@
     "status": "ok"
   },
   {
-    "ORG": "DET",
+    "ORG": "Detroit Tigers",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Keider Montero",
     "POS": "RHP",
@@ -806,7 +806,7 @@
     "status": "ok"
   },
   {
-    "ORG": "DET",
+    "ORG": "Detroit Tigers",
     "WBC TEAM": "United States",
     "PLAYER": "Tarik Skubal",
     "POS": "LHP",
@@ -819,7 +819,7 @@
     "status": "ok"
   },
   {
-    "ORG": "DET",
+    "ORG": "Detroit Tigers",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Gleyber Torres",
     "POS": "2B",
@@ -832,7 +832,7 @@
     "status": "ok"
   },
   {
-    "ORG": "HOU",
+    "ORG": "Houston Astros",
     "WBC TEAM": "Italy",
     "PLAYER": "Zach Dezenzo",
     "POS": "IF",
@@ -845,7 +845,7 @@
     "status": "ok"
   },
   {
-    "ORG": "HOU",
+    "ORG": "Houston Astros",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Jeremy Pena",
     "POS": "SS",
@@ -858,7 +858,7 @@
     "status": "ok"
   },
   {
-    "ORG": "HOU",
+    "ORG": "Houston Astros",
     "WBC TEAM": "Korea",
     "PLAYER": "Shay Whitcomb",
     "POS": "2B",
@@ -871,7 +871,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "Italy",
     "PLAYER": "Jac Caglianone",
     "POS": "OF",
@@ -884,7 +884,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "Canada",
     "PLAYER": "Eric Cerantola",
     "POS": "RHP",
@@ -897,7 +897,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Carlos Estevez",
     "POS": "RHP",
@@ -910,7 +910,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Maikel Garcia",
     "POS": "3B",
@@ -923,7 +923,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Seth Lugo",
     "POS": "RHP",
@@ -936,7 +936,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "Italy",
     "PLAYER": "Vinnie Pasquantino",
     "POS": "1B",
@@ -949,7 +949,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Salvador Perez",
     "POS": "C",
@@ -962,7 +962,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "United States",
     "PLAYER": "Michael Wacha",
     "POS": "RHP",
@@ -975,7 +975,7 @@
     "status": "ok"
   },
   {
-    "ORG": "KC",
+    "ORG": "Kansas City Royals",
     "WBC TEAM": "United States",
     "PLAYER": "Bobby Witt",
     "POS": "SS",
@@ -988,20 +988,20 @@
     "status": "ok"
   },
   {
-    "ORG": "LAA",
+    "ORG": "Los Angeles Angels",
     "WBC TEAM": "Italy",
     "PLAYER": "Sam Aldegheri",
     "POS": "LHP",
     "AGE": "24.5",
     "name_raw": "Sam Aldegheri",
-    "preseason_rank": "1413",
+    "preseason_rank": "1414",
     "current_rank": "1974",
     "fantasy_team": "None",
     "yahoo_key": "469.p.63620",
     "status": "ok"
   },
   {
-    "ORG": "LAA",
+    "ORG": "Los Angeles Angels",
     "WBC TEAM": "Japan",
     "PLAYER": "Yusei Kikuchi",
     "POS": "LHP",
@@ -1014,7 +1014,7 @@
     "status": "ok"
   },
   {
-    "ORG": "LAA",
+    "ORG": "Los Angeles Angels",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Matthew Lugo",
     "POS": "CF",
@@ -1027,20 +1027,20 @@
     "status": "ok"
   },
   {
-    "ORG": "LAA",
+    "ORG": "Los Angeles Angels",
     "WBC TEAM": "Cuba",
     "PLAYER": "Yoan Moncada",
     "POS": "3B",
     "AGE": "30.8",
     "name_raw": "Yoan Moncada",
-    "preseason_rank": "1480",
+    "preseason_rank": "1471",
     "current_rank": "696",
     "fantasy_team": "None",
     "yahoo_key": "469.p.9900",
     "status": "ok"
   },
   {
-    "ORG": "LAD",
+    "ORG": "Los Angeles Dodgers",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Edwin Diaz",
     "POS": "RHP",
@@ -1053,20 +1053,20 @@
     "status": "ok"
   },
   {
-    "ORG": "LAD",
+    "ORG": "Los Angeles Dodgers",
     "WBC TEAM": "Korea",
     "PLAYER": "Hyeseong Kim",
     "POS": "2B",
     "AGE": "27.1",
     "name_raw": "Hyeseong Kim",
-    "preseason_rank": "1501",
+    "preseason_rank": "1499",
     "current_rank": "626",
     "fantasy_team": "None",
     "yahoo_key": "469.p.64858",
     "status": "ok"
   },
   {
-    "ORG": "LAD",
+    "ORG": "Los Angeles Dodgers",
     "WBC TEAM": "Japan",
     "PLAYER": "Shohei Ohtani",
     "POS": "DH",
@@ -1079,7 +1079,7 @@
     "status": "ok"
   },
   {
-    "ORG": "LAD",
+    "ORG": "Los Angeles Dodgers",
     "WBC TEAM": "United States",
     "PLAYER": "Will Smith",
     "POS": "C",
@@ -1092,7 +1092,7 @@
     "status": "ok"
   },
   {
-    "ORG": "LAD",
+    "ORG": "Los Angeles Dodgers",
     "WBC TEAM": "Japan",
     "PLAYER": "Yoshinobu Yamamoto",
     "POS": "RHP",
@@ -1105,7 +1105,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Sandy Alcantara",
     "POS": "RHP",
@@ -1118,7 +1118,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Canada",
     "PLAYER": "Owen Caissie",
     "POS": "OF",
@@ -1131,7 +1131,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Canada",
     "PLAYER": "Liam Hicks",
     "POS": "C",
@@ -1144,7 +1144,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Canada",
     "PLAYER": "Otto Lopez",
     "POS": "SS",
@@ -1157,7 +1157,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Italy",
     "PLAYER": "Jakob Marsee",
     "POS": "OF",
@@ -1170,7 +1170,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Great Britain",
     "PLAYER": "Michael Petersen",
     "POS": "RHP",
@@ -1183,7 +1183,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Agustin Ramirez",
     "POS": "C",
@@ -1196,7 +1196,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Javier Sanoja",
     "POS": "UTL",
@@ -1209,7 +1209,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIA",
+    "ORG": "Miami Marlins",
     "WBC TEAM": "Mexico",
     "PLAYER": "Jared Serna",
     "POS": "2B",
@@ -1222,7 +1222,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Canada",
     "PLAYER": "Tyler Black",
     "POS": "UTL",
@@ -1235,7 +1235,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Jackson Chourio",
     "POS": "CF",
@@ -1248,7 +1248,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Venezuela",
     "PLAYER": "William Contreras",
     "POS": "C",
@@ -1261,7 +1261,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Mexico",
     "PLAYER": "Joey Ortiz",
     "POS": "3B",
@@ -1274,7 +1274,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Nicaragua",
     "PLAYER": "Carlos Rodriguez",
     "POS": "RHP",
@@ -1287,7 +1287,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "United States",
     "PLAYER": "Brice Turang",
     "POS": "2B",
@@ -1300,7 +1300,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Abner Uribe",
     "POS": "RHP",
@@ -1313,7 +1313,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Canada",
     "PLAYER": "Rob Zastryzny",
     "POS": "LHP",
@@ -1326,20 +1326,20 @@
     "status": "ok"
   },
   {
-    "ORG": "MIL",
+    "ORG": "Milwaukee Brewers",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Angel Zerpa",
     "POS": "LHP",
     "AGE": "26.4",
     "name_raw": "Angel Zerpa",
-    "preseason_rank": "688",
+    "preseason_rank": "671",
     "current_rank": "386",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12095",
     "status": "ok"
   },
   {
-    "ORG": "MIN",
+    "ORG": "Minnesota Twins",
     "WBC TEAM": "Mexico",
     "PLAYER": "Taj Bradley",
     "POS": "RHP",
@@ -1352,7 +1352,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIN",
+    "ORG": "Minnesota Twins",
     "WBC TEAM": "United States",
     "PLAYER": "Byron Buxton",
     "POS": "CF",
@@ -1365,7 +1365,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIN",
+    "ORG": "Minnesota Twins",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Pablo Lopez",
     "POS": "RHP",
@@ -1378,7 +1378,7 @@
     "status": "ok"
   },
   {
-    "ORG": "MIN",
+    "ORG": "Minnesota Twins",
     "WBC TEAM": "United States",
     "PLAYER": "Joe Ryan",
     "POS": "RHP",
@@ -1391,7 +1391,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Huascar Brazoban",
     "POS": "RHP",
@@ -1404,20 +1404,20 @@
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "Mexico",
     "PLAYER": "Alex Carrillo",
     "POS": "RHP",
     "AGE": "28.7",
     "name_raw": "Alex Carrillo",
-    "preseason_rank": "1302",
+    "preseason_rank": "1299",
     "current_rank": "1735",
     "fantasy_team": "None",
     "yahoo_key": "469.p.65995",
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "United States",
     "PLAYER": "Clay Holmes",
     "POS": "RHP",
@@ -1430,7 +1430,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "United States",
     "PLAYER": "Nolan McLean",
     "POS": "RHP",
@@ -1443,20 +1443,20 @@
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "Italy",
     "PLAYER": "Nick Morabito",
     "POS": "OF",
     "AGE": "22.8",
     "name_raw": "Nick Morabito",
-    "preseason_rank": "1882",
+    "preseason_rank": "1883",
     "current_rank": "1374",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60283",
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Juan Soto",
     "POS": "RF",
@@ -1469,7 +1469,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "Nicaragua",
     "PLAYER": "Mark Vientos",
     "POS": "3B",
@@ -1482,20 +1482,20 @@
     "status": "ok"
   },
   {
-    "ORG": "NYM",
+    "ORG": "New York Mets",
     "WBC TEAM": "Canada",
     "PLAYER": "Jared Young",
     "POS": "UTL",
     "AGE": "30.7",
     "name_raw": "Jared Young",
-    "preseason_rank": "1684",
+    "preseason_rank": "1685",
     "current_rank": "616",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12700",
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "United States",
     "PLAYER": "David Bednar",
     "POS": "RHP",
@@ -1508,7 +1508,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "Panama",
     "PLAYER": "Jose Caballero",
     "POS": "IF",
@@ -1521,7 +1521,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "Great Britain",
     "PLAYER": "Jazz Chisholm Jr.",
     "POS": "2B",
@@ -1534,7 +1534,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Fernando Cruz",
     "POS": "RHP",
@@ -1547,7 +1547,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Camilo Doval",
     "POS": "RHP",
@@ -1560,7 +1560,7 @@
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "United States",
     "PLAYER": "Aaron Judge",
     "POS": "RF",
@@ -1573,33 +1573,33 @@
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Elmer Rodriguez",
     "POS": "RHP",
     "AGE": "22.5",
     "name_raw": "Elmer Rodriguez",
-    "preseason_rank": "1058",
+    "preseason_rank": "1057",
     "current_rank": "2035",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60115",
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Amed Rosario",
     "POS": "UTL",
     "AGE": "30.3",
     "name_raw": "Amed Rosario",
-    "preseason_rank": "1444",
+    "preseason_rank": "1439",
     "current_rank": "491",
     "fantasy_team": "None",
     "yahoo_key": "469.p.10233",
     "status": "ok"
   },
   {
-    "ORG": "NYY",
+    "ORG": "New York Yankees",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Austin Wells",
     "POS": "C",
@@ -1612,7 +1612,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Jose Alvarado",
     "POS": "LHP",
@@ -1625,7 +1625,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "United States",
     "PLAYER": "Bryce Harper",
     "POS": "1B",
@@ -1638,33 +1638,33 @@
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "United States",
     "PLAYER": "Brad Keller",
     "POS": "RHP",
     "AGE": "30.6",
     "name_raw": "Brad Keller",
-    "preseason_rank": "419",
+    "preseason_rank": "415",
     "current_rank": "409",
     "fantasy_team": "dungeon crawler carl",
     "yahoo_key": "469.p.10418",
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Israel",
     "PLAYER": "Max Lazar",
     "POS": "RHP",
     "AGE": "26.8",
     "name_raw": "Max Lazar",
-    "preseason_rank": "1287",
+    "preseason_rank": "1285",
     "current_rank": "1935",
     "fantasy_team": "None",
     "yahoo_key": "469.p.63454",
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Italy",
     "PLAYER": "Aaron Nola",
     "POS": "RHP",
@@ -1677,20 +1677,20 @@
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Johan Rojas",
     "POS": "CF",
     "AGE": "25.6",
     "name_raw": "Johan Rojas",
-    "preseason_rank": "1489",
+    "preseason_rank": "1490",
     "current_rank": "919",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12508",
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Cristopher Sanchez",
     "POS": "LHP",
@@ -1703,7 +1703,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "United States",
     "PLAYER": "Kyle Schwarber",
     "POS": "DH",
@@ -1716,20 +1716,20 @@
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Panama",
     "PLAYER": "Edmundo Sosa",
     "POS": "2B",
     "AGE": "30.0",
     "name_raw": "Edmundo Sosa",
-    "preseason_rank": "1348",
+    "preseason_rank": "1344",
     "current_rank": "809",
     "fantasy_team": "None",
     "yahoo_key": "469.p.10594",
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Israel",
     "PLAYER": "Garrett Stubbs",
     "POS": "C",
@@ -1742,7 +1742,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PHI",
+    "ORG": "Philadelphia Phillies",
     "WBC TEAM": "Mexico",
     "PLAYER": "Taijuan Walker",
     "POS": "RHP",
@@ -1755,7 +1755,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Oneil Cruz",
     "POS": "CF",
@@ -1768,20 +1768,20 @@
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "Mexico",
     "PLAYER": "Nick Gonzales",
     "POS": "2B",
     "AGE": "26.8",
     "name_raw": "Nick Gonzales",
-    "preseason_rank": "1350",
+    "preseason_rank": "1360",
     "current_rank": "476",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12049",
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "Israel",
     "PLAYER": "Spencer Horwitz",
     "POS": "1B",
@@ -1794,7 +1794,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "Netherlands",
     "PLAYER": "Antwone Kelly",
     "POS": "RHP",
@@ -1807,20 +1807,20 @@
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "Italy",
     "PLAYER": "Kyle Nicolas",
     "POS": "RHP",
     "AGE": "27.0",
     "name_raw": "Kyle Nicolas",
-    "preseason_rank": "1363",
+    "preseason_rank": "1306",
     "current_rank": "507",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60341",
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Dennis Santana",
     "POS": "RHP",
@@ -1833,7 +1833,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "United States",
     "PLAYER": "Paul Skenes",
     "POS": "RHP",
@@ -1846,7 +1846,7 @@
     "status": "ok"
   },
   {
-    "ORG": "PIT",
+    "ORG": "Pittsburgh Pirates",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Gregory Soto",
     "POS": "LHP",
@@ -1859,7 +1859,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "Netherlands",
     "PLAYER": "Xander Bogaerts",
     "POS": "SS",
@@ -1872,20 +1872,20 @@
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "Italy",
     "PLAYER": "Alek Jacob",
     "POS": "RHP",
     "AGE": "27.7",
     "name_raw": "Alek Jacob",
-    "preseason_rank": "1337",
+    "preseason_rank": "1334",
     "current_rank": "2151",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60360",
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Manny Machado",
     "POS": "3B",
@@ -1898,7 +1898,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "Italy",
     "PLAYER": "Ron Marinaccio",
     "POS": "RHP",
@@ -1911,20 +1911,20 @@
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "Japan",
     "PLAYER": "Yuki Matsui",
     "POS": "LHP",
     "AGE": "30.3",
     "name_raw": "Yuki Matsui",
-    "preseason_rank": "613",
+    "preseason_rank": "612",
     "current_rank": "1942",
     "fantasy_team": "None",
     "yahoo_key": "469.p.63515",
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "United States",
     "PLAYER": "Mason Miller",
     "POS": "RHP",
@@ -1937,7 +1937,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Wandy Peralta",
     "POS": "LHP",
@@ -1950,7 +1950,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SD",
+    "ORG": "San Diego Padres",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Fernando Tatis Jr.",
     "POS": "RF",
@@ -1963,7 +1963,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "Mexico",
     "PLAYER": "Randy Arozarena",
     "POS": "LF",
@@ -1976,20 +1976,20 @@
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Eduard Bazardo",
     "POS": "RHP",
     "AGE": "30.5",
     "name_raw": "Eduard Bazardo",
-    "preseason_rank": "409",
+    "preseason_rank": "410",
     "current_rank": "329",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12092",
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "Italy",
     "PLAYER": "Dominic Canzone",
     "POS": "OF",
@@ -2002,20 +2002,20 @@
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "Italy",
     "PLAYER": "Miles Mastrobuoni",
     "POS": "UTL",
     "AGE": "30.3",
     "name_raw": "Miles Mastrobuoni",
-    "preseason_rank": "1602",
+    "preseason_rank": "1600",
     "current_rank": "1001",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12704",
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "Mexico",
     "PLAYER": "Andres Munoz",
     "POS": "RHP",
@@ -2028,7 +2028,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "Canada",
     "PLAYER": "Josh Naylor",
     "POS": "1B",
@@ -2041,7 +2041,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "United States",
     "PLAYER": "Cal Raleigh",
     "POS": "C",
@@ -2054,7 +2054,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Julio Rodriguez",
     "POS": "CF",
@@ -2067,7 +2067,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SEA",
+    "ORG": "Seattle Mariners",
     "WBC TEAM": "United States",
     "PLAYER": "Gabe Speier",
     "POS": "LHP",
@@ -2080,7 +2080,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Luis Arraez",
     "POS": "1B",
@@ -2093,7 +2093,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "Israel",
     "PLAYER": "Harrison Bader",
     "POS": "CF",
@@ -2106,33 +2106,33 @@
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "Great Britain",
     "PLAYER": "Tristan Beck",
     "POS": "RHP",
     "AGE": "29.7",
     "name_raw": "Tristan Beck",
-    "preseason_rank": "664",
+    "preseason_rank": "665",
     "current_rank": "2220",
     "fantasy_team": "None",
     "yahoo_key": "469.p.11420",
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Jose Butto",
     "POS": "RHP",
     "AGE": "28.0",
     "name_raw": "Jose Butto",
-    "preseason_rank": "592",
+    "preseason_rank": "589",
     "current_rank": "652",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12337",
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "Korea",
     "PLAYER": "Jung Hoo Lee",
     "POS": "CF",
@@ -2145,7 +2145,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Heliot Ramos",
     "POS": "RF",
@@ -2158,7 +2158,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "Colombia",
     "PLAYER": "Reiver Sanmartin",
     "POS": "LHP",
@@ -2171,7 +2171,7 @@
     "status": "ok"
   },
   {
-    "ORG": "SF",
+    "ORG": "San Francisco Giants",
     "WBC TEAM": "United States",
     "PLAYER": "Logan Webb",
     "POS": "RHP",
@@ -2184,7 +2184,7 @@
     "status": "ok"
   },
   {
-    "ORG": "STL",
+    "ORG": "St. Louis Cardinals",
     "WBC TEAM": "Panama",
     "PLAYER": "Leonardo Bernal",
     "POS": "C",
@@ -2197,7 +2197,7 @@
     "status": "ok"
   },
   {
-    "ORG": "STL",
+    "ORG": "St. Louis Cardinals",
     "WBC TEAM": "Italy",
     "PLAYER": "Gordon Graceffo",
     "POS": "RHP",
@@ -2210,7 +2210,7 @@
     "status": "ok"
   },
   {
-    "ORG": "STL",
+    "ORG": "St. Louis Cardinals",
     "WBC TEAM": "Panama",
     "PLAYER": "Ivan Herrera",
     "POS": "C",
@@ -2223,7 +2223,7 @@
     "status": "ok"
   },
   {
-    "ORG": "STL",
+    "ORG": "St. Louis Cardinals",
     "WBC TEAM": "Korea",
     "PLAYER": "Riley O",
     "POS": "RHP",
@@ -2236,33 +2236,33 @@
     "status": "ok"
   },
   {
-    "ORG": "STL",
+    "ORG": "St. Louis Cardinals",
     "WBC TEAM": "Italy",
     "PLAYER": "Thomas Saggese",
     "POS": "2B",
     "AGE": "23.9",
     "name_raw": "Thomas Saggese",
-    "preseason_rank": "1538",
+    "preseason_rank": "1537",
     "current_rank": "584",
     "fantasy_team": "None",
     "yahoo_key": "469.p.60431",
     "status": "ok"
   },
   {
-    "ORG": "STL",
+    "ORG": "St. Louis Cardinals",
     "WBC TEAM": "Puerto Rico",
     "PLAYER": "Bryan Torres",
     "POS": "OF",
     "AGE": "28.7",
     "name_raw": "Bryan Torres",
-    "preseason_rank": "2207",
+    "preseason_rank": "2208",
     "current_rank": "1308",
     "fantasy_team": "None",
     "yahoo_key": "469.p.64242",
     "status": "ok"
   },
   {
-    "ORG": "TB",
+    "ORG": "Tampa Bay Rays",
     "WBC TEAM": "Mexico",
     "PLAYER": "Jonathan Aranda",
     "POS": "2B",
@@ -2275,7 +2275,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TB",
+    "ORG": "Tampa Bay Rays",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Junior Caminero",
     "POS": "3B",
@@ -2288,7 +2288,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TB",
+    "ORG": "Tampa Bay Rays",
     "WBC TEAM": "United States",
     "PLAYER": "Garrett Cleavinger",
     "POS": "LHP",
@@ -2301,20 +2301,20 @@
     "status": "ok"
   },
   {
-    "ORG": "TB",
+    "ORG": "Tampa Bay Rays",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Yoendrys Gomez",
     "POS": "RHP",
     "AGE": "26.4",
     "name_raw": "Yoendrys Gomez",
-    "preseason_rank": "1400",
+    "preseason_rank": "1401",
     "current_rank": "671",
     "fantasy_team": "None",
     "yahoo_key": "469.p.11806",
     "status": "ok"
   },
   {
-    "ORG": "TB",
+    "ORG": "Tampa Bay Rays",
     "WBC TEAM": "United States",
     "PLAYER": "Griffin Jax",
     "POS": "RHP",
@@ -2327,7 +2327,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TB",
+    "ORG": "Tampa Bay Rays",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Edwin Uceta",
     "POS": "RHP",
@@ -2340,7 +2340,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TEX",
+    "ORG": "Texas Rangers",
     "WBC TEAM": "Mexico",
     "PLAYER": "Robert Garcia",
     "POS": "LHP",
@@ -2353,7 +2353,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TEX",
+    "ORG": "Texas Rangers",
     "WBC TEAM": "Mexico",
     "PLAYER": "Alejandro Osuna",
     "POS": "RF",
@@ -2366,7 +2366,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TOR",
+    "ORG": "Toronto Blue Jays",
     "WBC TEAM": "United States",
     "PLAYER": "Ernie Clement",
     "POS": "UTL",
@@ -2379,7 +2379,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TOR",
+    "ORG": "Toronto Blue Jays",
     "WBC TEAM": "Venezuela",
     "PLAYER": "Andres Gimenez",
     "POS": "2B/SS",
@@ -2392,7 +2392,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TOR",
+    "ORG": "Toronto Blue Jays",
     "WBC TEAM": "Dominican Republic",
     "PLAYER": "Vladimir Guerrero Jr.",
     "POS": "1B",
@@ -2405,7 +2405,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TOR",
+    "ORG": "Toronto Blue Jays",
     "WBC TEAM": "Panama",
     "PLAYER": "Leo Jimenez",
     "POS": "SS",
@@ -2418,7 +2418,7 @@
     "status": "ok"
   },
   {
-    "ORG": "TOR",
+    "ORG": "Toronto Blue Jays",
     "WBC TEAM": "Mexico",
     "PLAYER": "Alejandro Kirk",
     "POS": "C",
@@ -2431,20 +2431,20 @@
     "status": "ok"
   },
   {
-    "ORG": "TOR",
+    "ORG": "Toronto Blue Jays",
     "WBC TEAM": "Canada",
     "PLAYER": "Adam Macko",
     "POS": "LHP",
     "AGE": "25.2",
     "name_raw": "Adam Macko",
-    "preseason_rank": "1149",
+    "preseason_rank": "1147",
     "current_rank": "1677",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12535",
     "status": "ok"
   },
   {
-    "ORG": "TOR",
+    "ORG": "Toronto Blue Jays",
     "WBC TEAM": "Japan",
     "PLAYER": "Kazuma Okamoto",
     "POS": "3B",
@@ -2457,13 +2457,13 @@
     "status": "ok"
   },
   {
-    "ORG": "WSH",
+    "ORG": "Washington Nationals",
     "WBC TEAM": "Great Britain",
     "PLAYER": "Harry Ford",
     "POS": "C",
     "AGE": "23.0",
     "name_raw": "Harry Ford",
-    "preseason_rank": "1754",
+    "preseason_rank": "1756",
     "current_rank": "936",
     "fantasy_team": "None",
     "yahoo_key": "469.p.12532",
