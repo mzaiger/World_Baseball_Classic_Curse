@@ -16,6 +16,23 @@
         color: #ffffff;
         font-size: 1.4rem;
     }
+    .filter-container {
+        max-width: 800px;
+        margin: 0 auto 20px auto;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    select {
+        background-color: #333;
+        color: white;
+        border: 1px solid #555;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        min-width: 150px;
+    }
     table {
         width: 100%;
         max-width: 800px;
@@ -37,82 +54,141 @@
         padding: 8px;
         border: 1px solid #ffffff;
         font-size: 0.9rem;
-        color: #ffffff; /* White letters */
+        color: #ffffff;
         font-weight: bold;
-        vertical-align: top; /* Keeps name at the top of the cell */
+        vertical-align: top;
     }
-    /* Sub-text for the team info */
     .team-info {
         display: block;
         font-size: 0.7rem;
         font-weight: bold;
         margin-top: 4px;
         opacity: 0.9;
-	color: #000000;
+        color: #eeeeee; /* Lightened for readability on colored backgrounds */
     }
-    .worse {
-        background-color: #ff6b6b !important;
-    }
-    .better {
-        background-color: #51cf66 !important;
-    }
-    tr:not(.worse):not(.better) td {
-        background-color: #444444; 
-    }
+    .worse { background-color: #ff6b6b !important; }
+    .better { background-color: #51cf66 !important; }
 </style>
 </head>
 <body>
 
     <h1>World Baseball Classic Curse</h1>
 
+    <div class="filter-container">
+        <select id="fantasyFilter"><option value="">All Fantasy Teams</option></select>
+        <select id="mlbFilter"><option value="">All MLB Teams</option></select>
+        <select id="wbcFilter"><option value="">All WBC Teams</option></select>
+    </div>
+
     <table>
         <thead>
             <tr>
-                <th style="width: 60%;">Player</th>
-                <th style="width: 20%;">Current</th>
-                <th style="width: 20%;">Pre-Season</th>
+                <th>Player (WBC, MLB, Fantasy)</th>
+                <th style="width:60px; text-align:center;">Cur</th>
+                <th style="width:60px; text-align:center;">Pre</th>
             </tr>
         </thead>
         <tbody id="tableBody">
-        </tbody>
+            </tbody>
     </table>
 
     <script>
+        let allPlayerData = [];
+
         async function loadPlayerData() {
             try {
-        const response = await fetch(`player_ranks.json?t=${new Date().getTime()}`);                	const data = await response.json();
+                const response = await fetch('player_ranks.json');
+                allPlayerData = await response.json();
 
-                data.sort((a, b) => parseInt(a.preseason_rank) - parseInt(b.preseason_rank));
+                // Sort by preseason rank initially
+                allPlayerData.sort((a, b) => parseInt(a.preseason_rank) - parseInt(b.preseason_rank));
 
-                const tableBody = document.getElementById('tableBody');
-                tableBody.innerHTML = '';
-
-                data.forEach(player => {
-                    const tr = document.createElement('tr');
-                    const pre = parseInt(player.preseason_rank);
-                    const cur = parseInt(player.current_rank);
-
-                    if (cur > pre) {
-                        tr.classList.add('worse');
-                    } else if (pre > cur) {
-                        tr.classList.add('better');
-                    }
-
-                    tr.innerHTML = `
-                        <td>
-                            ${player.name_raw}
-                            <span class="team-info">
-                                (${player["WBC TEAM"]}, ${player.ORG}, ${player.fantasy_team})
-                            </span>
-                        </td>
-                        <td style="text-align:center;">${player.current_rank}</td>
-                        <td style="text-align:center;">${player.preseason_rank}</td>
-                    `;
-                    tableBody.appendChild(tr);
-                });
+                populateFilters(allPlayerData);
+                applyFiltersFromURL();
+                renderTable();
             } catch (error) {
                 console.error("Unable to load JSON:", error);
             }
+        }
+
+        function populateFilters(data) {
+            const fantasyTeams = [...new Set(data.map(p => p.fantasy_team))].sort();
+            const mlbTeams = [...new Set(data.map(p => p.ORG))].sort();
+            const wbcTeams = [...new Set(data.map(p => p["WBC TEAM"]))].sort();
+
+            const fSel = document.getElementById('fantasyFilter');
+            const mSel = document.getElementById('mlbFilter');
+            const wSel = document.getElementById('wbcFilter');
+
+            fantasyTeams.forEach(team => fSel.add(new Option(team, team)));
+            mlbTeams.forEach(team => mSel.add(new Option(team, team)));
+            wbcTeams.forEach(team => wSel.add(new Option(team, team)));
+
+            // Add Event Listeners
+            [fSel, mSel, wSel].forEach(el => el.addEventListener('change', () => {
+                updateURL();
+                renderTable();
+            }));
+        }
+
+        function updateURL() {
+            const f = document.getElementById('fantasyFilter').value;
+            const m = document.getElementById('mlbFilter').value;
+            const w = document.getElementById('wbcFilter').value;
+
+            const params = new URLSearchParams();
+            if (f) params.set('fantasy', f);
+            if (m) params.set('mlb', m);
+            if (w) params.set('wbc', w);
+
+            const newRelativePathQuery = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+            history.pushState(null, '', newRelativePathQuery);
+        }
+
+        function applyFiltersFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.has('fantasy')) document.getElementById('fantasyFilter').value = params.get('fantasy');
+            if (params.has('mlb')) document.getElementById('mlbFilter').value = params.get('mlb');
+            if (params.has('wbc')) document.getElementById('wbcFilter').value = params.get('wbc');
+        }
+
+        function renderTable() {
+            const fVal = document.getElementById('fantasyFilter').value;
+            const mVal = document.getElementById('mlbFilter').value;
+            const wVal = document.getElementById('wbcFilter').value;
+
+            const filteredData = allPlayerData.filter(player => {
+                return (fVal === "" || player.fantasy_team === fVal) &&
+                       (mVal === "" || player.ORG === mVal) &&
+                       (wVal === "" || player["WBC TEAM"] === wVal);
+            });
+
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
+
+            filteredData.forEach(player => {
+                const tr = document.createElement('tr');
+                const pre = parseInt(player.preseason_rank);
+                const cur = parseInt(player.current_rank);
+
+                if (cur > pre) {
+                    tr.classList.add('worse');
+                } else if (pre > cur) {
+                    tr.classList.add('better');
+                }
+
+                tr.innerHTML = `
+                    <td>
+                        ${player.name_raw}
+                        <span class="team-info">
+                            (${player["WBC TEAM"]}, ${player.ORG}, ${player.fantasy_team})
+                        </span>
+                    </td>
+                    <td style="text-align:center;">${player.current_rank}</td>
+                    <td style="text-align:center;">${player.preseason_rank}</td>
+                `;
+                tableBody.appendChild(tr);
+            });
         }
 
         loadPlayerData();
