@@ -6,7 +6,11 @@
     "POS": "3B",
     "AGE": "34.9",
     "name_raw": "Nolan Arenado",
-    "status": "not_found"
+    "preseason_rank": "280",
+    "current_rank": "268",
+    "fantasy_team": "The Evil Empire",
+    "yahoo_key": "469.p.9105",
+    "status": "ok"
   },
   {
     "ORG": "Arizona Diamondbacks",
@@ -15,7 +19,11 @@
     "POS": "LF",
     "AGE": "25.5",
     "name_raw": "Corbin Carroll",
-    "status": "not_found"
+    "preseason_rank": "10",
+    "current_rank": "67",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.11722",
+    "status": "ok"
   },
   {
     "ORG": "Arizona Diamondbacks",
@@ -24,7 +32,11 @@
     "POS": "2B",
     "AGE": "32.4",
     "name_raw": "Ketel Marte",
-    "status": "not_found"
+    "preseason_rank": "29",
+    "current_rank": "60",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.10036",
+    "status": "ok"
   },
   {
     "ORG": "Arizona Diamondbacks",
@@ -33,7 +45,11 @@
     "POS": "SS",
     "AGE": "26.4",
     "name_raw": "Geraldo Perdomo",
-    "status": "not_found"
+    "preseason_rank": "164",
+    "current_rank": "203",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.11417",
+    "status": "ok"
   },
   {
     "ORG": "Arizona Diamondbacks",
@@ -42,7 +58,11 @@
     "POS": "LHP",
     "AGE": "32.9",
     "name_raw": "Eduardo Rodriguez",
-    "status": "not_found"
+    "preseason_rank": "279",
+    "current_rank": "135",
+    "fantasy_team": "Sidd Finch Version 24",
+    "yahoo_key": "469.p.9546",
+    "status": "ok"
   },
   {
     "ORG": "Arizona Diamondbacks",
@@ -51,7 +71,11 @@
     "POS": "1B",
     "AGE": "39.9",
     "name_raw": "Carlos Santana",
-    "status": "not_found"
+    "preseason_rank": "1701",
+    "current_rank": "1308",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.8619",
+    "status": "ok"
   },
   {
     "ORG": "Arizona Diamondbacks",
@@ -60,7 +84,11 @@
     "POS": "RHP",
     "AGE": "28.6",
     "name_raw": "Michael Soroka",
-    "status": "not_found"
+    "preseason_rank": "167",
+    "current_rank": "92",
+    "fantasy_team": "Sexual Chocolate",
+    "yahoo_key": "469.p.10423",
+    "status": "ok"
   },
   {
     "ORG": "Arizona Diamondbacks",
@@ -69,7 +97,11 @@
     "POS": "CF",
     "AGE": "25.9",
     "name_raw": "Alek Thomas",
-    "status": "not_found"
+    "preseason_rank": "1617",
+    "current_rank": "1087",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11267",
+    "status": "ok"
   },
   {
     "ORG": "Oakland Athletics",
@@ -78,7 +110,11 @@
     "POS": "RHP",
     "AGE": "27.0",
     "name_raw": "Elvis Alvarado",
-    "status": "not_found"
+    "preseason_rank": "550",
+    "current_rank": "348",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60180",
+    "status": "ok"
   },
   {
     "ORG": "Oakland Athletics",
@@ -87,7 +123,11 @@
     "POS": "OF",
     "AGE": "25.8",
     "name_raw": "Denzel Clarke",
-    "status": "not_found"
+    "preseason_rank": "1771",
+    "current_rank": "1187",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12504",
+    "status": "ok"
   },
   {
     "ORG": "Oakland Athletics",
@@ -96,7 +136,11 @@
     "POS": "LF",
     "AGE": "28.7",
     "name_raw": "Carlos Cortes",
-    "status": "not_found"
+    "preseason_rank": "276",
+    "current_rank": "871",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12488",
+    "status": "ok"
   },
   {
     "ORG": "Oakland Athletics",
@@ -105,7 +149,11 @@
     "POS": "3B",
     "AGE": "24.6",
     "name_raw": "Darell Hernaiz",
-    "status": "not_found"
+    "preseason_rank": "1691",
+    "current_rank": "1124",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60638",
+    "status": "ok"
   },
   {
     "ORG": "Oakland Athletics",
@@ -114,7 +162,11 @@
     "POS": "RHP",
     "AGE": "32.0",
     "name_raw": "Luis Severino",
-    "status": "not_found"
+    "preseason_rank": "1387",
+    "current_rank": "670",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.9879",
+    "status": "ok"
   },
   {
     "ORG": "Oakland Athletics",
@@ -123,7 +175,11 @@
     "POS": "RHP",
     "AGE": "25.5",
     "name_raw": "Chen Zhong-Ao Zhuang",
-    "status": "not_found"
+    "preseason_rank": "851",
+    "current_rank": "2428",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60732",
+    "status": "ok"
   },
   {
     "ORG": "Atlanta Braves",
@@ -132,7 +188,11 @@
     "POS": "RF",
     "AGE": "28.2",
     "name_raw": "Ronald Acuna Jr.",
-    "status": "not_found"
+    "preseason_rank": "53",
+    "current_rank": "583",
+    "fantasy_team": "Gooserules",
+    "yahoo_key": "469.p.10646",
+    "status": "ok"
   },
   {
     "ORG": "Atlanta Braves",
@@ -141,7 +201,11 @@
     "POS": "2B",
     "AGE": "29.2",
     "name_raw": "Ozzie Albies",
-    "status": "not_found"
+    "preseason_rank": "94",
+    "current_rank": "100",
+    "fantasy_team": "The Evil Empire",
+    "yahoo_key": "469.p.10237",
+    "status": "ok"
   },
   {
     "ORG": "Atlanta Braves",
@@ -150,7 +214,11 @@
     "POS": "LF",
     "AGE": "33.0",
     "name_raw": "Jurickson Profar",
-    "status": "not_found"
+    "preseason_rank": "1635",
+    "current_rank": "1497",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.9112",
+    "status": "ok"
   },
   {
     "ORG": "Baltimore Orioles",
@@ -159,7 +227,11 @@
     "POS": "RHP",
     "AGE": "29.0",
     "name_raw": "Jose Espada",
-    "status": "not_found"
+    "preseason_rank": "667",
+    "current_rank": "431",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.62403",
+    "status": "ok"
   },
   {
     "ORG": "Baltimore Orioles",
@@ -168,7 +240,11 @@
     "POS": "RHP",
     "AGE": "32.1",
     "name_raw": "Rico Garcia",
-    "status": "not_found"
+    "preseason_rank": "351",
+    "current_rank": "140",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.11453",
+    "status": "ok"
   },
   {
     "ORG": "Baltimore Orioles",
@@ -177,7 +253,11 @@
     "POS": "SS",
     "AGE": "24.7",
     "name_raw": "Gunnar Henderson",
-    "status": "not_found"
+    "preseason_rank": "45",
+    "current_rank": "296",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.11731",
+    "status": "ok"
   },
   {
     "ORG": "Baltimore Orioles",
@@ -186,7 +266,11 @@
     "POS": "RHP",
     "AGE": "30.2",
     "name_raw": "Dean Kremer",
-    "status": "not_found"
+    "preseason_rank": "516",
+    "current_rank": "315",
+    "fantasy_team": "Just A Bit Outside",
+    "yahoo_key": "469.p.11428",
+    "status": "ok"
   },
   {
     "ORG": "Baltimore Orioles",
@@ -195,7 +279,11 @@
     "POS": "OF",
     "AGE": "30.7",
     "name_raw": "Tyler O",
-    "status": "not_found"
+    "preseason_rank": "1605",
+    "current_rank": "1016",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10215",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -204,7 +292,11 @@
     "POS": "RF",
     "AGE": "26.7",
     "name_raw": "Wilyer Abreu",
-    "status": "not_found"
+    "preseason_rank": "90",
+    "current_rank": "110",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.12731",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -213,7 +305,11 @@
     "POS": "RHP",
     "AGE": "26.8",
     "name_raw": "Brayan Bello",
-    "status": "not_found"
+    "preseason_rank": "1540",
+    "current_rank": "954",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12330",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -222,7 +318,11 @@
     "POS": "1B",
     "AGE": "33.8",
     "name_raw": "Willson Contreras",
-    "status": "not_found"
+    "preseason_rank": "60",
+    "current_rank": "26",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.10166",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -231,7 +331,11 @@
     "POS": "CF",
     "AGE": "29.5",
     "name_raw": "Jarren Duran",
-    "status": "not_found"
+    "preseason_rank": "179",
+    "current_rank": "241",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.11735",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -240,7 +344,11 @@
     "POS": "3B",
     "AGE": "29.2",
     "name_raw": "Nate Eaton",
-    "status": "not_found"
+    "preseason_rank": "1744",
+    "current_rank": "1163",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12656",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -249,7 +357,11 @@
     "POS": "LHP",
     "AGE": "28.9",
     "name_raw": "Jovani Moran",
-    "status": "not_found"
+    "preseason_rank": "443",
+    "current_rank": "198",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12269",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -258,7 +370,11 @@
     "POS": "UTL",
     "AGE": "25.5",
     "name_raw": "Ceddanne Rafaela",
-    "status": "not_found"
+    "preseason_rank": "114",
+    "current_rank": "173",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.12730",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -267,7 +383,11 @@
     "POS": "LHP",
     "AGE": "30.5",
     "name_raw": "Ranger Suarez",
-    "status": "not_found"
+    "preseason_rank": "119",
+    "current_rank": "154",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.11117",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -276,7 +396,11 @@
     "POS": "RHP",
     "AGE": "31.1",
     "name_raw": "Greg Weissert",
-    "status": "not_found"
+    "preseason_rank": "463",
+    "current_rank": "460",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12685",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -285,7 +409,11 @@
     "POS": "RHP",
     "AGE": "29.7",
     "name_raw": "Garrett Whitlock",
-    "status": "not_found"
+    "preseason_rank": "401",
+    "current_rank": "121",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.11358",
+    "status": "ok"
   },
   {
     "ORG": "Boston Red Sox",
@@ -294,7 +422,11 @@
     "POS": "LF",
     "AGE": "32.6",
     "name_raw": "Masataka Yoshida",
-    "status": "not_found"
+    "preseason_rank": "1526",
+    "current_rank": "926",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12763",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -303,7 +435,11 @@
     "POS": "C",
     "AGE": "27.0",
     "name_raw": "Miguel Amaya",
-    "status": "not_found"
+    "preseason_rank": "1604",
+    "current_rank": "975",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11075",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -312,7 +448,11 @@
     "POS": "RHP",
     "AGE": "28.6",
     "name_raw": "Javier Assad",
-    "status": "not_found"
+    "preseason_rank": "469",
+    "current_rank": "463",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12682",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -321,7 +461,11 @@
     "POS": "LHP",
     "AGE": "35.1",
     "name_raw": "Matthew Boyd",
-    "status": "not_found"
+    "preseason_rank": "331",
+    "current_rank": "234",
+    "fantasy_team": "Sidd Finch Version 24",
+    "yahoo_key": "469.p.10011",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -330,7 +474,11 @@
     "POS": "3B",
     "AGE": "31.9",
     "name_raw": "Alex Bregman",
-    "status": "not_found"
+    "preseason_rank": "127",
+    "current_rank": "215",
+    "fantasy_team": "The Evil Empire",
+    "yahoo_key": "469.p.10183",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -339,7 +487,11 @@
     "POS": "CF",
     "AGE": "23.9",
     "name_raw": "Pete Crow-Armstrong",
-    "status": "not_found"
+    "preseason_rank": "19",
+    "current_rank": "6",
+    "fantasy_team": "Sexual Chocolate",
+    "yahoo_key": "469.p.12157",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -348,7 +500,11 @@
     "POS": "RHP",
     "AGE": "26.1",
     "name_raw": "Daniel Palencia",
-    "status": "not_found"
+    "preseason_rank": "228",
+    "current_rank": "261",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60121",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -357,7 +513,11 @@
     "POS": "RF",
     "AGE": "31.5",
     "name_raw": "Seiya Suzuki",
-    "status": "not_found"
+    "preseason_rank": "86",
+    "current_rank": "84",
+    "fantasy_team": "Need Homers Now!",
+    "yahoo_key": "469.p.12588",
+    "status": "ok"
   },
   {
     "ORG": "Chicago Cubs",
@@ -366,7 +526,11 @@
     "POS": "RHP",
     "AGE": "34.3",
     "name_raw": "Jameson Taillon",
-    "status": "not_found"
+    "preseason_rank": "615",
+    "current_rank": "819",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.9123",
+    "status": "ok"
   },
   {
     "ORG": "Cincinnati Reds",
@@ -375,7 +539,11 @@
     "POS": "SS",
     "AGE": "22.5",
     "name_raw": "Edwin Arroyo",
-    "status": "not_found"
+    "preseason_rank": "1791",
+    "current_rank": "1214",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12534",
+    "status": "ok"
   },
   {
     "ORG": "Cincinnati Reds",
@@ -384,7 +552,11 @@
     "POS": "3B",
     "AGE": "34.6",
     "name_raw": "Eugenio Suarez",
-    "status": "not_found"
+    "preseason_rank": "155",
+    "current_rank": "855",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.9724",
+    "status": "ok"
   },
   {
     "ORG": "Cleveland Guardians",
@@ -393,7 +565,11 @@
     "POS": "LHP",
     "AGE": "27.5",
     "name_raw": "Logan Allen",
-    "status": "not_found"
+    "preseason_rank": "1402",
+    "current_rank": "483",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60139",
+    "status": "ok"
   },
   {
     "ORG": "Cleveland Guardians",
@@ -402,7 +578,11 @@
     "POS": "RHP",
     "AGE": "33.0",
     "name_raw": "Matt Festa",
-    "status": "not_found"
+    "preseason_rank": "551",
+    "current_rank": "557",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11068",
+    "status": "ok"
   },
   {
     "ORG": "Cleveland Guardians",
@@ -411,7 +591,11 @@
     "POS": "C",
     "AGE": "26.0",
     "name_raw": "Bo Naylor",
-    "status": "not_found"
+    "preseason_rank": "1729",
+    "current_rank": "1215",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11296",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -420,7 +604,11 @@
     "POS": "LHP",
     "AGE": "34.1",
     "name_raw": "Brennan Bernardino",
-    "status": "not_found"
+    "preseason_rank": "456",
+    "current_rank": "347",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12661",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -429,7 +617,11 @@
     "POS": "LF",
     "AGE": "28.9",
     "name_raw": "Willi Castro",
-    "status": "not_found"
+    "preseason_rank": "224",
+    "current_rank": "592",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10868",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -438,7 +630,11 @@
     "POS": "LF",
     "AGE": "28.7",
     "name_raw": "Troy Johnston",
-    "status": "not_found"
+    "preseason_rank": "238",
+    "current_rank": "584",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60622",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -447,7 +643,11 @@
     "POS": "2B",
     "AGE": "26.8",
     "name_raw": "Edouard Julien",
-    "status": "not_found"
+    "preseason_rank": "1594",
+    "current_rank": "942",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12729",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -456,7 +656,11 @@
     "POS": "RHP",
     "AGE": "34.2",
     "name_raw": "Michael Lorenzen",
-    "status": "not_found"
+    "preseason_rank": "2505",
+    "current_rank": "1152",
+    "fantasy_team": "Need Homers Now!",
+    "yahoo_key": "469.p.9949",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -465,7 +669,11 @@
     "POS": "RHP",
     "AGE": "31.1",
     "name_raw": "Antonio Senzatela",
-    "status": "not_found"
+    "preseason_rank": "1427",
+    "current_rank": "176",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.10176",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -474,7 +682,11 @@
     "POS": "SS",
     "AGE": "24.6",
     "name_raw": "Ezequiel Tovar",
-    "status": "not_found"
+    "preseason_rank": "212",
+    "current_rank": "961",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12322",
+    "status": "ok"
   },
   {
     "ORG": "Colorado Rockies",
@@ -483,7 +695,11 @@
     "POS": "RHP",
     "AGE": "26.4",
     "name_raw": "Victor Vodnik",
-    "status": "not_found"
+    "preseason_rank": "674",
+    "current_rank": "728",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12368",
+    "status": "ok"
   },
   {
     "ORG": "Chicago White Sox",
@@ -492,7 +708,11 @@
     "POS": "RHP",
     "AGE": "31.3",
     "name_raw": "Seranthony Dominguez",
-    "status": "not_found"
+    "preseason_rank": "146",
+    "current_rank": "200",
+    "fantasy_team": "Sidd Finch Version 24",
+    "yahoo_key": "469.p.11011",
+    "status": "ok"
   },
   {
     "ORG": "Chicago White Sox",
@@ -501,7 +721,11 @@
     "POS": "IF",
     "AGE": "25.4",
     "name_raw": "Curtis Mead",
-    "status": "not_found"
+    "preseason_rank": "266",
+    "current_rank": "193",
+    "fantasy_team": "Gooserules",
+    "yahoo_key": "469.p.12558",
+    "status": "ok"
   },
   {
     "ORG": "Chicago White Sox",
@@ -510,7 +734,11 @@
     "POS": "1B",
     "AGE": "26.1",
     "name_raw": "Munetaka Murakami",
-    "status": "not_found"
+    "preseason_rank": "102",
+    "current_rank": "120",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.66369",
+    "status": "ok"
   },
   {
     "ORG": "Chicago White Sox",
@@ -519,7 +747,11 @@
     "POS": "C",
     "AGE": "24.0",
     "name_raw": "Kyle Teel",
-    "status": "not_found"
+    "preseason_rank": "324",
+    "current_rank": "1108",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.62979",
+    "status": "ok"
   },
   {
     "ORG": "Detroit Tigers",
@@ -528,7 +760,11 @@
     "POS": "RHP",
     "AGE": "38.4",
     "name_raw": "Kenley Jansen",
-    "status": "not_found"
+    "preseason_rank": "148",
+    "current_rank": "218",
+    "fantasy_team": "Gooserules",
+    "yahoo_key": "469.p.8758",
+    "status": "ok"
   },
   {
     "ORG": "Detroit Tigers",
@@ -537,7 +773,11 @@
     "POS": "LF",
     "AGE": "28.6",
     "name_raw": "Jahmai Jones",
-    "status": "not_found"
+    "preseason_rank": "1716",
+    "current_rank": "1132",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10498",
+    "status": "ok"
   },
   {
     "ORG": "Detroit Tigers",
@@ -546,7 +786,11 @@
     "POS": "IF",
     "AGE": "23.1",
     "name_raw": "Hao-Yu Lee",
-    "status": "not_found"
+    "preseason_rank": "1672",
+    "current_rank": "1063",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60319",
+    "status": "ok"
   },
   {
     "ORG": "Detroit Tigers",
@@ -555,7 +799,11 @@
     "POS": "RHP",
     "AGE": "25.7",
     "name_raw": "Keider Montero",
-    "status": "not_found"
+    "preseason_rank": "251",
+    "current_rank": "155",
+    "fantasy_team": "Need Homers Now!",
+    "yahoo_key": "469.p.63428",
+    "status": "ok"
   },
   {
     "ORG": "Detroit Tigers",
@@ -564,7 +812,11 @@
     "POS": "LHP",
     "AGE": "29.3",
     "name_raw": "Tarik Skubal",
-    "status": "not_found"
+    "preseason_rank": "23",
+    "current_rank": "47",
+    "fantasy_team": "Need Homers Now!",
+    "yahoo_key": "469.p.11763",
+    "status": "ok"
   },
   {
     "ORG": "Detroit Tigers",
@@ -573,7 +825,11 @@
     "POS": "2B",
     "AGE": "29.2",
     "name_raw": "Gleyber Torres",
-    "status": "not_found"
+    "preseason_rank": "243",
+    "current_rank": "911",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.10236",
+    "status": "ok"
   },
   {
     "ORG": "Houston Astros",
@@ -582,7 +838,11 @@
     "POS": "IF",
     "AGE": "25.8",
     "name_raw": "Zach Dezenzo",
-    "status": "not_found"
+    "preseason_rank": "1720",
+    "current_rank": "1139",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.62488",
+    "status": "ok"
   },
   {
     "ORG": "Houston Astros",
@@ -591,7 +851,11 @@
     "POS": "SS",
     "AGE": "28.4",
     "name_raw": "Jeremy Pena",
-    "status": "not_found"
+    "preseason_rank": "137",
+    "current_rank": "756",
+    "fantasy_team": "The Evil Empire",
+    "yahoo_key": "469.p.11768",
+    "status": "ok"
   },
   {
     "ORG": "Houston Astros",
@@ -600,7 +864,11 @@
     "POS": "2B",
     "AGE": "27.4",
     "name_raw": "Shay Whitcomb",
-    "status": "not_found"
+    "preseason_rank": "1855",
+    "current_rank": "1191",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12442",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -609,7 +877,11 @@
     "POS": "OF",
     "AGE": "23.1",
     "name_raw": "Jac Caglianone",
-    "status": "not_found"
+    "preseason_rank": "157",
+    "current_rank": "259",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.64312",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -618,7 +890,11 @@
     "POS": "RHP",
     "AGE": "25.8",
     "name_raw": "Eric Cerantola",
-    "status": "not_found"
+    "preseason_rank": "1410",
+    "current_rank": "658",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.64001",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -627,7 +903,11 @@
     "POS": "RHP",
     "AGE": "33.2",
     "name_raw": "Carlos Estevez",
-    "status": "not_found"
+    "preseason_rank": "482",
+    "current_rank": "674",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10274",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -636,7 +916,11 @@
     "POS": "3B",
     "AGE": "26.0",
     "name_raw": "Maikel Garcia",
-    "status": "not_found"
+    "preseason_rank": "189",
+    "current_rank": "908",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.12336",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -645,7 +929,11 @@
     "POS": "RHP",
     "AGE": "36.3",
     "name_raw": "Seth Lugo",
-    "status": "not_found"
+    "preseason_rank": "256",
+    "current_rank": "805",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10326",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -654,7 +942,11 @@
     "POS": "1B",
     "AGE": "28.4",
     "name_raw": "Vinnie Pasquantino",
-    "status": "not_found"
+    "preseason_rank": "206",
+    "current_rank": "846",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.12449",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -663,7 +955,11 @@
     "POS": "C",
     "AGE": "35.8",
     "name_raw": "Salvador Perez",
-    "status": "not_found"
+    "preseason_rank": "153",
+    "current_rank": "836",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.9015",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -672,7 +968,11 @@
     "POS": "RHP",
     "AGE": "34.7",
     "name_raw": "Michael Wacha",
-    "status": "not_found"
+    "preseason_rank": "186",
+    "current_rank": "219",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.9329",
+    "status": "ok"
   },
   {
     "ORG": "Kansas City Royals",
@@ -681,7 +981,11 @@
     "POS": "SS",
     "AGE": "25.7",
     "name_raw": "Bobby Witt",
-    "status": "not_found"
+    "preseason_rank": "7",
+    "current_rank": "58",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.11771",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Angels",
@@ -690,7 +994,11 @@
     "POS": "LHP",
     "AGE": "24.5",
     "name_raw": "Sam Aldegheri",
-    "status": "not_found"
+    "preseason_rank": "1425",
+    "current_rank": "705",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.63620",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Angels",
@@ -699,7 +1007,11 @@
     "POS": "LHP",
     "AGE": "34.7",
     "name_raw": "Yusei Kikuchi",
-    "status": "not_found"
+    "preseason_rank": "368",
+    "current_rank": "784",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11263",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Angels",
@@ -708,7 +1020,11 @@
     "POS": "CF",
     "AGE": "24.8",
     "name_raw": "Matthew Lugo",
-    "status": "not_found"
+    "preseason_rank": "1841",
+    "current_rank": "1878",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11737",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Angels",
@@ -717,7 +1033,11 @@
     "POS": "3B",
     "AGE": "30.8",
     "name_raw": "Yoan Moncada",
-    "status": "not_found"
+    "preseason_rank": "1678",
+    "current_rank": "1138",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.9900",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Dodgers",
@@ -726,7 +1046,11 @@
     "POS": "RHP",
     "AGE": "32.0",
     "name_raw": "Edwin Diaz",
-    "status": "not_found"
+    "preseason_rank": "360",
+    "current_rank": "462",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.10214",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Dodgers",
@@ -735,7 +1059,11 @@
     "POS": "2B",
     "AGE": "27.1",
     "name_raw": "Hyeseong Kim",
-    "status": "not_found"
+    "preseason_rank": "352",
+    "current_rank": "1073",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.64858",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Dodgers",
@@ -744,7 +1072,11 @@
     "POS": "DH",
     "AGE": "31.7",
     "name_raw": "Shohei Ohtani",
-    "status": "not_found"
+    "preseason_rank": "1",
+    "current_rank": "8",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.1000001",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Dodgers",
@@ -753,7 +1085,11 @@
     "POS": "C",
     "AGE": "30.9",
     "name_raw": "Will Smith",
-    "status": "not_found"
+    "preseason_rank": "221",
+    "current_rank": "950",
+    "fantasy_team": "Gooserules",
+    "yahoo_key": "469.p.10642",
+    "status": "ok"
   },
   {
     "ORG": "Los Angeles Dodgers",
@@ -762,7 +1098,11 @@
     "POS": "RHP",
     "AGE": "27.5",
     "name_raw": "Yoshinobu Yamamoto",
-    "status": "not_found"
+    "preseason_rank": "13",
+    "current_rank": "4",
+    "fantasy_team": "Just A Bit Outside",
+    "yahoo_key": "469.p.63423",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -771,7 +1111,11 @@
     "POS": "RHP",
     "AGE": "30.5",
     "name_raw": "Sandy Alcantara",
-    "status": "not_found"
+    "preseason_rank": "172",
+    "current_rank": "49",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.10597",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -780,7 +1124,11 @@
     "POS": "OF",
     "AGE": "23.7",
     "name_raw": "Owen Caissie",
-    "status": "not_found"
+    "preseason_rank": "367",
+    "current_rank": "379",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12127",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -789,7 +1137,11 @@
     "POS": "C",
     "AGE": "26.8",
     "name_raw": "Liam Hicks",
-    "status": "not_found"
+    "preseason_rank": "154",
+    "current_rank": "74",
+    "fantasy_team": "The Evil Empire",
+    "yahoo_key": "469.p.63648",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -798,7 +1150,11 @@
     "POS": "SS",
     "AGE": "27.4",
     "name_raw": "Otto Lopez",
-    "status": "not_found"
+    "preseason_rank": "63",
+    "current_rank": "122",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.12100",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -807,7 +1163,11 @@
     "POS": "OF",
     "AGE": "24.7",
     "name_raw": "Jakob Marsee",
-    "status": "not_found"
+    "preseason_rank": "258",
+    "current_rank": "308",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.62119",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -816,7 +1176,11 @@
     "POS": "RHP",
     "AGE": "31.8",
     "name_raw": "Michael Petersen",
-    "status": "not_found"
+    "preseason_rank": "461",
+    "current_rank": "222",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.63448",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -825,7 +1189,11 @@
     "POS": "C",
     "AGE": "24.5",
     "name_raw": "Agustin Ramirez",
-    "status": "not_found"
+    "preseason_rank": "1502",
+    "current_rank": "1080",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.61818",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -834,7 +1202,11 @@
     "POS": "UTL",
     "AGE": "23.5",
     "name_raw": "Javier Sanoja",
-    "status": "not_found"
+    "preseason_rank": "1255",
+    "current_rank": "976",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.62194",
+    "status": "ok"
   },
   {
     "ORG": "Miami Marlins",
@@ -843,7 +1215,11 @@
     "POS": "2B",
     "AGE": "23.8",
     "name_raw": "Jared Serna",
-    "status": "not_found"
+    "preseason_rank": "1943",
+    "current_rank": "1643",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.63609",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -852,7 +1228,11 @@
     "POS": "UTL",
     "AGE": "25.6",
     "name_raw": "Tyler Black",
-    "status": "not_found"
+    "preseason_rank": "1782",
+    "current_rank": "1175",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12478",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -861,7 +1241,11 @@
     "POS": "CF",
     "AGE": "22.0",
     "name_raw": "Jackson Chourio",
-    "status": "not_found"
+    "preseason_rank": "15",
+    "current_rank": "141",
+    "fantasy_team": "Just A Bit Outside",
+    "yahoo_key": "469.p.12480",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -870,7 +1254,11 @@
     "POS": "C",
     "AGE": "28.2",
     "name_raw": "William Contreras",
-    "status": "not_found"
+    "preseason_rank": "51",
+    "current_rank": "124",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.11268",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -879,7 +1267,11 @@
     "POS": "3B",
     "AGE": "27.6",
     "name_raw": "Joey Ortiz",
-    "status": "not_found"
+    "preseason_rank": "1304",
+    "current_rank": "978",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12374",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -888,7 +1280,11 @@
     "POS": "RHP",
     "AGE": "24.3",
     "name_raw": "Carlos Rodriguez",
-    "status": "not_found"
+    "preseason_rank": "2067",
+    "current_rank": "1819",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11493",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -897,7 +1293,11 @@
     "POS": "2B",
     "AGE": "26.3",
     "name_raw": "Brice Turang",
-    "status": "not_found"
+    "preseason_rank": "24",
+    "current_rank": "19",
+    "fantasy_team": "Sexual Chocolate",
+    "yahoo_key": "469.p.11343",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -906,7 +1306,11 @@
     "POS": "RHP",
     "AGE": "25.7",
     "name_raw": "Abner Uribe",
-    "status": "not_found"
+    "preseason_rank": "272",
+    "current_rank": "152",
+    "fantasy_team": "Need Homers Now!",
+    "yahoo_key": "469.p.12746",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -915,7 +1319,11 @@
     "POS": "LHP",
     "AGE": "33.9",
     "name_raw": "Rob Zastryzny",
-    "status": "not_found"
+    "preseason_rank": "603",
+    "current_rank": "2225",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10371",
+    "status": "ok"
   },
   {
     "ORG": "Milwaukee Brewers",
@@ -924,7 +1332,11 @@
     "POS": "LHP",
     "AGE": "26.4",
     "name_raw": "Angel Zerpa",
-    "status": "not_found"
+    "preseason_rank": "1359",
+    "current_rank": "673",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12095",
+    "status": "ok"
   },
   {
     "ORG": "Minnesota Twins",
@@ -933,7 +1345,11 @@
     "POS": "RHP",
     "AGE": "25.0",
     "name_raw": "Taj Bradley",
-    "status": "not_found"
+    "preseason_rank": "306",
+    "current_rank": "125",
+    "fantasy_team": "Gooserules",
+    "yahoo_key": "469.p.12554",
+    "status": "ok"
   },
   {
     "ORG": "Minnesota Twins",
@@ -942,7 +1358,11 @@
     "POS": "CF",
     "AGE": "32.2",
     "name_raw": "Byron Buxton",
-    "status": "not_found"
+    "preseason_rank": "31",
+    "current_rank": "37",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.9590",
+    "status": "ok"
   },
   {
     "ORG": "Minnesota Twins",
@@ -951,7 +1371,11 @@
     "POS": "RHP",
     "AGE": "30.0",
     "name_raw": "Pablo Lopez",
-    "status": "not_found"
+    "preseason_rank": "508",
+    "current_rank": "2275",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11057",
+    "status": "ok"
   },
   {
     "ORG": "Minnesota Twins",
@@ -960,7 +1384,11 @@
     "POS": "RHP",
     "AGE": "29.7",
     "name_raw": "Joe Ryan",
-    "status": "not_found"
+    "preseason_rank": "40",
+    "current_rank": "70",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.11847",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -969,7 +1397,11 @@
     "POS": "RHP",
     "AGE": "36.4",
     "name_raw": "Huascar Brazoban",
-    "status": "not_found"
+    "preseason_rank": "418",
+    "current_rank": "202",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12658",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -978,7 +1410,11 @@
     "POS": "RHP",
     "AGE": "28.7",
     "name_raw": "Alex Carrillo",
-    "status": "not_found"
+    "preseason_rank": "1235",
+    "current_rank": "2030",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.65995",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -987,7 +1423,11 @@
     "POS": "RHP",
     "AGE": "32.9",
     "name_raw": "Clay Holmes",
-    "status": "not_found"
+    "preseason_rank": "366",
+    "current_rank": "170",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.10569",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -996,7 +1436,11 @@
     "POS": "RHP",
     "AGE": "24.6",
     "name_raw": "Nolan McLean",
-    "status": "not_found"
+    "preseason_rank": "84",
+    "current_rank": "51",
+    "fantasy_team": "Just A Bit Outside",
+    "yahoo_key": "469.p.62935",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -1005,7 +1449,11 @@
     "POS": "OF",
     "AGE": "22.8",
     "name_raw": "Nick Morabito",
-    "status": "not_found"
+    "preseason_rank": "2498",
+    "current_rank": "1295",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60283",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -1014,7 +1462,11 @@
     "POS": "RF",
     "AGE": "27.4",
     "name_raw": "Juan Soto",
-    "status": "not_found"
+    "preseason_rank": "3",
+    "current_rank": "35",
+    "fantasy_team": "Injection Site Reactionary",
+    "yahoo_key": "469.p.10626",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -1023,7 +1475,11 @@
     "POS": "3B",
     "AGE": "26.2",
     "name_raw": "Mark Vientos",
-    "status": "not_found"
+    "preseason_rank": "223",
+    "current_rank": "966",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10922",
+    "status": "ok"
   },
   {
     "ORG": "New York Mets",
@@ -1032,7 +1488,11 @@
     "POS": "UTL",
     "AGE": "30.7",
     "name_raw": "Jared Young",
-    "status": "not_found"
+    "preseason_rank": "1621",
+    "current_rank": "974",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12700",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1041,7 +1501,11 @@
     "POS": "RHP",
     "AGE": "31.4",
     "name_raw": "David Bednar",
-    "status": "not_found"
+    "preseason_rank": "75",
+    "current_rank": "80",
+    "fantasy_team": "The Evil Empire",
+    "yahoo_key": "469.p.11645",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1050,7 +1514,11 @@
     "POS": "IF",
     "AGE": "29.5",
     "name_raw": "Jose Caballero",
-    "status": "not_found"
+    "preseason_rank": "382",
+    "current_rank": "591",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.60776",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1059,7 +1527,11 @@
     "POS": "2B",
     "AGE": "28.1",
     "name_raw": "Jazz Chisholm Jr.",
-    "status": "not_found"
+    "preseason_rank": "39",
+    "current_rank": "115",
+    "fantasy_team": "Just A Bit Outside",
+    "yahoo_key": "469.p.10839",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1068,7 +1540,11 @@
     "POS": "RHP",
     "AGE": "35.9",
     "name_raw": "Fernando Cruz",
-    "status": "not_found"
+    "preseason_rank": "414",
+    "current_rank": "166",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12690",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1077,7 +1553,11 @@
     "POS": "RHP",
     "AGE": "28.7",
     "name_raw": "Camilo Doval",
-    "status": "not_found"
+    "preseason_rank": "533",
+    "current_rank": "594",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.11536",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1086,7 +1566,11 @@
     "POS": "RF",
     "AGE": "33.9",
     "name_raw": "Aaron Judge",
-    "status": "not_found"
+    "preseason_rank": "116",
+    "current_rank": "143",
+    "fantasy_team": "The Evil Empire",
+    "yahoo_key": "469.p.9877",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1095,7 +1579,11 @@
     "POS": "RHP",
     "AGE": "22.5",
     "name_raw": "Elmer Rodriguez",
-    "status": "not_found"
+    "preseason_rank": "1414",
+    "current_rank": "751",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60115",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1104,7 +1592,11 @@
     "POS": "UTL",
     "AGE": "30.3",
     "name_raw": "Amed Rosario",
-    "status": "not_found"
+    "preseason_rank": "1510",
+    "current_rank": "1017",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10233",
+    "status": "ok"
   },
   {
     "ORG": "New York Yankees",
@@ -1113,7 +1605,11 @@
     "POS": "C",
     "AGE": "26.6",
     "name_raw": "Austin Wells",
-    "status": "not_found"
+    "preseason_rank": "1614",
+    "current_rank": "1102",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12161",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1122,7 +1618,11 @@
     "POS": "LHP",
     "AGE": "30.8",
     "name_raw": "Jose Alvarado",
-    "status": "not_found"
+    "preseason_rank": "1185",
+    "current_rank": "655",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10692",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1131,7 +1631,11 @@
     "POS": "1B",
     "AGE": "33.4",
     "name_raw": "Bryce Harper",
-    "status": "not_found"
+    "preseason_rank": "25",
+    "current_rank": "21",
+    "fantasy_team": "Sexual Chocolate",
+    "yahoo_key": "469.p.8875",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1140,7 +1644,11 @@
     "POS": "RHP",
     "AGE": "30.6",
     "name_raw": "Brad Keller",
-    "status": "not_found"
+    "preseason_rank": "442",
+    "current_rank": "388",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10418",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1149,7 +1657,11 @@
     "POS": "RHP",
     "AGE": "26.8",
     "name_raw": "Max Lazar",
-    "status": "not_found"
+    "preseason_rank": "1319",
+    "current_rank": "564",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.63454",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1158,7 +1670,11 @@
     "POS": "RHP",
     "AGE": "32.8",
     "name_raw": "Aaron Nola",
-    "status": "not_found"
+    "preseason_rank": "388",
+    "current_rank": "889",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.9882",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1167,7 +1683,11 @@
     "POS": "CF",
     "AGE": "25.6",
     "name_raw": "Johan Rojas",
-    "status": "not_found"
+    "preseason_rank": "1740",
+    "current_rank": "1364",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12508",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1176,7 +1696,11 @@
     "POS": "LHP",
     "AGE": "29.2",
     "name_raw": "Cristopher Sanchez",
-    "status": "not_found"
+    "preseason_rank": "8",
+    "current_rank": "5",
+    "fantasy_team": "Gooserules",
+    "yahoo_key": "469.p.11706",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1185,7 +1709,11 @@
     "POS": "DH",
     "AGE": "33.0",
     "name_raw": "Kyle Schwarber",
-    "status": "not_found"
+    "preseason_rank": "5",
+    "current_rank": "7",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.9861",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1194,7 +1722,11 @@
     "POS": "2B",
     "AGE": "30.0",
     "name_raw": "Edmundo Sosa",
-    "status": "not_found"
+    "preseason_rank": "1528",
+    "current_rank": "1030",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10594",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1203,7 +1735,11 @@
     "POS": "C",
     "AGE": "32.8",
     "name_raw": "Garrett Stubbs",
-    "status": "not_found"
+    "preseason_rank": "1834",
+    "current_rank": "1210",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10478",
+    "status": "ok"
   },
   {
     "ORG": "Philadelphia Phillies",
@@ -1212,7 +1748,11 @@
     "POS": "RHP",
     "AGE": "33.6",
     "name_raw": "Taijuan Walker",
-    "status": "not_found"
+    "preseason_rank": "1620",
+    "current_rank": "905",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.9321",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1221,7 +1761,11 @@
     "POS": "CF",
     "AGE": "27.4",
     "name_raw": "Oneil Cruz",
-    "status": "not_found"
+    "preseason_rank": "61",
+    "current_rank": "104",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.11370",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1230,7 +1774,11 @@
     "POS": "2B",
     "AGE": "26.8",
     "name_raw": "Nick Gonzales",
-    "status": "not_found"
+    "preseason_rank": "312",
+    "current_rank": "302",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12049",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1239,7 +1787,11 @@
     "POS": "1B",
     "AGE": "28.3",
     "name_raw": "Spencer Horwitz",
-    "status": "not_found"
+    "preseason_rank": "214",
+    "current_rank": "493",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12742",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1248,7 +1800,11 @@
     "POS": "RHP",
     "AGE": "22.5",
     "name_raw": "Antwone Kelly",
-    "status": "not_found"
+    "preseason_rank": "1337",
+    "current_rank": "624",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.66534",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1257,7 +1813,11 @@
     "POS": "RHP",
     "AGE": "27.0",
     "name_raw": "Kyle Nicolas",
-    "status": "not_found"
+    "preseason_rank": "1467",
+    "current_rank": "683",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60341",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1266,7 +1826,11 @@
     "POS": "RHP",
     "AGE": "29.9",
     "name_raw": "Dennis Santana",
-    "status": "not_found"
+    "preseason_rank": "282",
+    "current_rank": "833",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10901",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1275,7 +1839,11 @@
     "POS": "RHP",
     "AGE": "23.8",
     "name_raw": "Paul Skenes",
-    "status": "not_found"
+    "preseason_rank": "12",
+    "current_rank": "39",
+    "fantasy_team": "Sidd Finch Version 24",
+    "yahoo_key": "469.p.62972",
+    "status": "ok"
   },
   {
     "ORG": "Pittsburgh Pirates",
@@ -1284,7 +1852,11 @@
     "POS": "LHP",
     "AGE": "31.1",
     "name_raw": "Gregory Soto",
-    "status": "not_found"
+    "preseason_rank": "169",
+    "current_rank": "136",
+    "fantasy_team": "Sidd Finch Version 24",
+    "yahoo_key": "469.p.10882",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1293,7 +1865,11 @@
     "POS": "SS",
     "AGE": "33.4",
     "name_raw": "Xander Bogaerts",
-    "status": "not_found"
+    "preseason_rank": "192",
+    "current_rank": "492",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.9319",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1302,7 +1878,11 @@
     "POS": "RHP",
     "AGE": "27.7",
     "name_raw": "Alek Jacob",
-    "status": "not_found"
+    "preseason_rank": "1222",
+    "current_rank": "386",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60360",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1311,7 +1891,11 @@
     "POS": "3B",
     "AGE": "33.7",
     "name_raw": "Manny Machado",
-    "status": "not_found"
+    "preseason_rank": "77",
+    "current_rank": "97",
+    "fantasy_team": "Sexual Chocolate",
+    "yahoo_key": "469.p.9111",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1320,7 +1904,11 @@
     "POS": "RHP",
     "AGE": "30.7",
     "name_raw": "Ron Marinaccio",
-    "status": "not_found"
+    "preseason_rank": "1385",
+    "current_rank": "839",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12332",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1329,7 +1917,11 @@
     "POS": "LHP",
     "AGE": "30.3",
     "name_raw": "Yuki Matsui",
-    "status": "not_found"
+    "preseason_rank": "536",
+    "current_rank": "367",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.63515",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1338,7 +1930,11 @@
     "POS": "RHP",
     "AGE": "27.5",
     "name_raw": "Mason Miller",
-    "status": "not_found"
+    "preseason_rank": "21",
+    "current_rank": "17",
+    "fantasy_team": "Cuban Missile Crisis",
+    "yahoo_key": "469.p.12505",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1347,7 +1943,11 @@
     "POS": "LHP",
     "AGE": "34.6",
     "name_raw": "Wandy Peralta",
-    "status": "not_found"
+    "preseason_rank": "492",
+    "current_rank": "586",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10391",
+    "status": "ok"
   },
   {
     "ORG": "San Diego Padres",
@@ -1356,7 +1956,11 @@
     "POS": "RF",
     "AGE": "27.2",
     "name_raw": "Fernando Tatis Jr.",
-    "status": "not_found"
+    "preseason_rank": "32",
+    "current_rank": "93",
+    "fantasy_team": "Need Homers Now!",
+    "yahoo_key": "469.p.10639",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1365,7 +1969,11 @@
     "POS": "LF",
     "AGE": "31.0",
     "name_raw": "Randy Arozarena",
-    "status": "not_found"
+    "preseason_rank": "67",
+    "current_rank": "25",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.11104",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1374,7 +1982,11 @@
     "POS": "RHP",
     "AGE": "30.5",
     "name_raw": "Eduard Bazardo",
-    "status": "not_found"
+    "preseason_rank": "411",
+    "current_rank": "243",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12092",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1383,7 +1995,11 @@
     "POS": "OF",
     "AGE": "28.6",
     "name_raw": "Dominic Canzone",
-    "status": "not_found"
+    "preseason_rank": "484",
+    "current_rank": "328",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60061",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1392,7 +2008,11 @@
     "POS": "UTL",
     "AGE": "30.3",
     "name_raw": "Miles Mastrobuoni",
-    "status": "not_found"
+    "preseason_rank": "1780",
+    "current_rank": "1227",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12704",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1401,7 +2021,11 @@
     "POS": "RHP",
     "AGE": "27.1",
     "name_raw": "Andres Munoz",
-    "status": "not_found"
+    "preseason_rank": "163",
+    "current_rank": "108",
+    "fantasy_team": "Injection Site Reactionary",
+    "yahoo_key": "469.p.11526",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1410,7 +2034,11 @@
     "POS": "1B",
     "AGE": "28.7",
     "name_raw": "Josh Naylor",
-    "status": "not_found"
+    "preseason_rank": "36",
+    "current_rank": "433",
+    "fantasy_team": "Losing hope",
+    "yahoo_key": "469.p.10572",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1419,7 +2047,11 @@
     "POS": "C",
     "AGE": "29.3",
     "name_raw": "Cal Raleigh",
-    "status": "not_found"
+    "preseason_rank": "105",
+    "current_rank": "897",
+    "fantasy_team": "Injection Site Reactionary",
+    "yahoo_key": "469.p.11531",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1428,7 +2060,11 @@
     "POS": "CF",
     "AGE": "25.2",
     "name_raw": "Julio Rodriguez",
-    "status": "not_found"
+    "preseason_rank": "6",
+    "current_rank": "130",
+    "fantasy_team": "Injection Site Reactionary",
+    "yahoo_key": "469.p.11384",
+    "status": "ok"
   },
   {
     "ORG": "Seattle Mariners",
@@ -1437,7 +2073,11 @@
     "POS": "LHP",
     "AGE": "30.9",
     "name_raw": "Gabe Speier",
-    "status": "not_found"
+    "preseason_rank": "429",
+    "current_rank": "313",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11653",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1446,7 +2086,11 @@
     "POS": "1B",
     "AGE": "28.9",
     "name_raw": "Luis Arraez",
-    "status": "not_found"
+    "preseason_rank": "328",
+    "current_rank": "216",
+    "fantasy_team": "Injection Site Reactionary",
+    "yahoo_key": "469.p.11221",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1455,7 +2099,11 @@
     "POS": "CF",
     "AGE": "31.8",
     "name_raw": "Harrison Bader",
-    "status": "not_found"
+    "preseason_rank": "332",
+    "current_rank": "1089",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10591",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1464,7 +2112,11 @@
     "POS": "RHP",
     "AGE": "29.7",
     "name_raw": "Tristan Beck",
-    "status": "not_found"
+    "preseason_rank": "1300",
+    "current_rank": "645",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11420",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1473,7 +2125,11 @@
     "POS": "RHP",
     "AGE": "28.0",
     "name_raw": "Jose Butto",
-    "status": "not_found"
+    "preseason_rank": "1352",
+    "current_rank": "639",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12337",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1482,7 +2138,11 @@
     "POS": "CF",
     "AGE": "27.5",
     "name_raw": "Jung Hoo Lee",
-    "status": "not_found"
+    "preseason_rank": "263",
+    "current_rank": "382",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.63494",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1491,7 +2151,11 @@
     "POS": "RF",
     "AGE": "26.5",
     "name_raw": "Heliot Ramos",
-    "status": "not_found"
+    "preseason_rank": "235",
+    "current_rank": "786",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.10944",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1500,7 +2164,11 @@
     "POS": "LHP",
     "AGE": "29.9",
     "name_raw": "Reiver Sanmartin",
-    "status": "not_found"
+    "preseason_rank": "696",
+    "current_rank": "410",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12277",
+    "status": "ok"
   },
   {
     "ORG": "San Francisco Giants",
@@ -1509,7 +2177,11 @@
     "POS": "RHP",
     "AGE": "29.3",
     "name_raw": "Logan Webb",
-    "status": "not_found"
+    "preseason_rank": "41",
+    "current_rank": "69",
+    "fantasy_team": "Gooserules",
+    "yahoo_key": "469.p.11235",
+    "status": "ok"
   },
   {
     "ORG": "St. Louis Cardinals",
@@ -1518,7 +2190,11 @@
     "POS": "C",
     "AGE": "22.1",
     "name_raw": "Leonardo Bernal",
-    "status": "not_found"
+    "preseason_rank": "2072",
+    "current_rank": "1779",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60403",
+    "status": "ok"
   },
   {
     "ORG": "St. Louis Cardinals",
@@ -1527,7 +2203,11 @@
     "POS": "RHP",
     "AGE": "26.0",
     "name_raw": "Gordon Graceffo",
-    "status": "not_found"
+    "preseason_rank": "462",
+    "current_rank": "264",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60394",
+    "status": "ok"
   },
   {
     "ORG": "St. Louis Cardinals",
@@ -1536,7 +2216,11 @@
     "POS": "C",
     "AGE": "25.8",
     "name_raw": "Ivan Herrera",
-    "status": "not_found"
+    "preseason_rank": "268",
+    "current_rank": "66",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.11836",
+    "status": "ok"
   },
   {
     "ORG": "St. Louis Cardinals",
@@ -1545,7 +2229,11 @@
     "POS": "RHP",
     "AGE": "31.1",
     "name_raw": "Riley O",
-    "status": "not_found"
+    "preseason_rank": "177",
+    "current_rank": "109",
+    "fantasy_team": "Injection Site Reactionary",
+    "yahoo_key": "469.p.11846",
+    "status": "ok"
   },
   {
     "ORG": "St. Louis Cardinals",
@@ -1554,7 +2242,11 @@
     "POS": "2B",
     "AGE": "23.9",
     "name_raw": "Thomas Saggese",
-    "status": "not_found"
+    "preseason_rank": "1722",
+    "current_rank": "1151",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60431",
+    "status": "ok"
   },
   {
     "ORG": "St. Louis Cardinals",
@@ -1563,7 +2255,11 @@
     "POS": "OF",
     "AGE": "28.7",
     "name_raw": "Bryan Torres",
-    "status": "not_found"
+    "preseason_rank": "1738",
+    "current_rank": "1093",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.64242",
+    "status": "ok"
   },
   {
     "ORG": "Tampa Bay Rays",
@@ -1572,7 +2268,11 @@
     "POS": "2B",
     "AGE": "27.8",
     "name_raw": "Jonathan Aranda",
-    "status": "not_found"
+    "preseason_rank": "174",
+    "current_rank": "54",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.12309",
+    "status": "ok"
   },
   {
     "ORG": "Tampa Bay Rays",
@@ -1581,7 +2281,11 @@
     "POS": "3B",
     "AGE": "22.7",
     "name_raw": "Junior Caminero",
-    "status": "not_found"
+    "preseason_rank": "17",
+    "current_rank": "36",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.60419",
+    "status": "ok"
   },
   {
     "ORG": "Tampa Bay Rays",
@@ -1590,7 +2294,11 @@
     "POS": "LHP",
     "AGE": "31.9",
     "name_raw": "Garrett Cleavinger",
-    "status": "not_found"
+    "preseason_rank": "437",
+    "current_rank": "280",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11704",
+    "status": "ok"
   },
   {
     "ORG": "Tampa Bay Rays",
@@ -1599,7 +2307,11 @@
     "POS": "RHP",
     "AGE": "26.4",
     "name_raw": "Yoendrys Gomez",
-    "status": "not_found"
+    "preseason_rank": "260",
+    "current_rank": "271",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.11806",
+    "status": "ok"
   },
   {
     "ORG": "Tampa Bay Rays",
@@ -1608,7 +2320,11 @@
     "POS": "RHP",
     "AGE": "31.3",
     "name_raw": "Griffin Jax",
-    "status": "not_found"
+    "preseason_rank": "345",
+    "current_rank": "393",
+    "fantasy_team": "Need Homers Now!",
+    "yahoo_key": "469.p.12203",
+    "status": "ok"
   },
   {
     "ORG": "Tampa Bay Rays",
@@ -1617,7 +2333,11 @@
     "POS": "RHP",
     "AGE": "28.2",
     "name_raw": "Edwin Uceta",
-    "status": "not_found"
+    "preseason_rank": "499",
+    "current_rank": "2408",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11482",
+    "status": "ok"
   },
   {
     "ORG": "Texas Rangers",
@@ -1626,7 +2346,11 @@
     "POS": "LHP",
     "AGE": "29.7",
     "name_raw": "Robert Garcia",
-    "status": "not_found"
+    "preseason_rank": "542",
+    "current_rank": "505",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60615",
+    "status": "ok"
   },
   {
     "ORG": "Texas Rangers",
@@ -1635,7 +2359,11 @@
     "POS": "RF",
     "AGE": "23.4",
     "name_raw": "Alejandro Osuna",
-    "status": "not_found"
+    "preseason_rank": "1590",
+    "current_rank": "956",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.60436",
+    "status": "ok"
   },
   {
     "ORG": "Toronto Blue Jays",
@@ -1644,7 +2372,11 @@
     "POS": "UTL",
     "AGE": "30.0",
     "name_raw": "Ernie Clement",
-    "status": "not_found"
+    "preseason_rank": "187",
+    "current_rank": "815",
+    "fantasy_team": "Oasis Breeze Tan and Spa",
+    "yahoo_key": "469.p.11892",
+    "status": "ok"
   },
   {
     "ORG": "Toronto Blue Jays",
@@ -1653,7 +2385,11 @@
     "POS": "2B/SS",
     "AGE": "27.5",
     "name_raw": "Andres Gimenez",
-    "status": "not_found"
+    "preseason_rank": "371",
+    "current_rank": "890",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.10919",
+    "status": "ok"
   },
   {
     "ORG": "Toronto Blue Jays",
@@ -1662,7 +2398,11 @@
     "POS": "1B",
     "AGE": "27.0",
     "name_raw": "Vladimir Guerrero Jr.",
-    "status": "not_found"
+    "preseason_rank": "56",
+    "current_rank": "326",
+    "fantasy_team": "Zegster",
+    "yahoo_key": "469.p.10621",
+    "status": "ok"
   },
   {
     "ORG": "Toronto Blue Jays",
@@ -1671,7 +2411,11 @@
     "POS": "SS",
     "AGE": "24.8",
     "name_raw": "Leo Jimenez",
-    "status": "not_found"
+    "preseason_rank": "1749",
+    "current_rank": "1111",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11558",
+    "status": "ok"
   },
   {
     "ORG": "Toronto Blue Jays",
@@ -1680,7 +2424,11 @@
     "POS": "C",
     "AGE": "27.3",
     "name_raw": "Alejandro Kirk",
-    "status": "not_found"
+    "preseason_rank": "305",
+    "current_rank": "1110",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.11853",
+    "status": "ok"
   },
   {
     "ORG": "Toronto Blue Jays",
@@ -1689,7 +2437,11 @@
     "POS": "LHP",
     "AGE": "25.2",
     "name_raw": "Adam Macko",
-    "status": "not_found"
+    "preseason_rank": "1173",
+    "current_rank": "528",
+    "fantasy_team": "None",
+    "yahoo_key": "469.p.12535",
+    "status": "ok"
   },
   {
     "ORG": "Toronto Blue Jays",
@@ -1698,7 +2450,11 @@
     "POS": "3B",
     "AGE": "29.7",
     "name_raw": "Kazuma Okamoto",
-    "status": "not_found"
+    "preseason_rank": "271",
+    "current_rank": "239",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.66491",
+    "status": "ok"
   },
   {
     "ORG": "Washington Nationals",
@@ -1707,6 +2463,10 @@
     "POS": "C",
     "AGE": "23.0",
     "name_raw": "Harry Ford",
-    "status": "not_found"
+    "preseason_rank": "1793",
+    "current_rank": "1167",
+    "fantasy_team": "Now I Need Homers!",
+    "yahoo_key": "469.p.12532",
+    "status": "ok"
   }
 ]
