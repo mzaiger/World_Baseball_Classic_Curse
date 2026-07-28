@@ -26,6 +26,13 @@ BASE_URL = "https://fantasysports.yahooapis.com/fantasy/v2"
 REQUEST_DELAY = 1.0
 
 # ---------------------------------------------------------------------------
+# TEMP TESTING SWITCHES — set TEST_PLAYER back to None and DEBUG back to
+# False (or delete this block) to restore normal full-run behavior.
+# ---------------------------------------------------------------------------
+TEST_PLAYER = "Aaron Judge"   # set to None to run the full CSV sweep as normal
+DEBUG = True                  # set to False to silence the diagnostic logging
+
+# ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
@@ -73,9 +80,18 @@ def api_get(session: OAuth2Session, url: str, params: dict | None = None) -> dic
     params = params or {}
     params["format"] = "json"
     resp = session.get(url, params=params)
-    if resp.status_code != 200: return {}
-    try: return resp.json()
-    except: return {}
+    if resp.status_code != 200:
+        if DEBUG:
+            print(f"\n  [HTTP {resp.status_code}] {resp.url}")
+            print(f"  [BODY] {resp.text[:500]}")
+        return {}
+    try:
+        return resp.json()
+    except Exception as e:
+        if DEBUG:
+            print(f"\n  [JSON PARSE ERROR] {e}")
+            print(f"  [RAW BODY] {resp.text[:500]}")
+        return {}
 
 # ---------------------------------------------------------------------------
 # Core Logic
@@ -93,16 +109,26 @@ def search_player(session, name, league_key):
     for query in search_queries:
         safe_name = quote(query)
         url = f"{BASE_URL}/league/{league_key}/players;search={safe_name};out=ownership"
+        if DEBUG:
+            print(f"\n  [REQUEST] {url}")
         time.sleep(REQUEST_DELAY)
         data = api_get(session, url)
         
-        if not data: continue
-            
+        if not data:
+            if DEBUG:
+                print(f"  [EMPTY RESPONSE] api_get returned nothing for query='{query}'")
+            continue
+        elif DEBUG:
+            print(f"  [RESPONSE KEYS] {list(data.keys())}")
+            print(f"  [RAW] {json.dumps(data)[:800]}")
+
         try:
             l_content = data.get("fantasy_content", {}).get("league", [{}, {}])
             if len(l_content) > 1:
                 players_block = l_content[1].get("players", {})
-                
+                if DEBUG:
+                    print(f"  [PLAYERS BLOCK COUNT] {players_block.get('count', 0)}")
+
                 if players_block.get("count", 0) > 0:
                     p_entry = players_block.get("0", {}).get("player", [])
                     combined_info = {"fantasy_team": "None"}
@@ -166,6 +192,18 @@ def main():
     parser.add_argument("--out", default="player_ranks.json")
     parser.add_argument("--league", default="469.l.23321")
     args = parser.parse_args()
+
+    if TEST_PLAYER:
+        session = get_oauth_session()
+        print(f"[TEST MODE] Testing lookup for '{TEST_PLAYER}' against league '{args.league}'...")
+        match = search_player(session, TEST_PLAYER, args.league)
+        if not match:
+            print("\nRESULT: NOT FOUND (see [HTTP]/[EMPTY RESPONSE]/[PLAYERS BLOCK COUNT] lines above for the reason)")
+        else:
+            print(f"\nRESULT: MATCHED -> {json.dumps(match, indent=2)}")
+            ranks = get_player_ranks(session, args.league, match["player_key"])
+            print(f"RANKS -> {ranks}")
+        return
 
     players = read_csv(args.csv)
     session = get_oauth_session()
