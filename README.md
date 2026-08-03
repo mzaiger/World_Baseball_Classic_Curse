@@ -17,6 +17,17 @@ fantasy season that follows.
   moved from preseason to current — the core evidence for or against the
   "curse"
 
+## GitHub secrets required
+
+`.github/workflows/update_player_ranks.yml` runs daily and needs these
+added under repo → Settings → Secrets and variables → Actions:
+
+| Secret | Used for |
+|---|---|
+| `YAHOO_CLIENT_ID` | Yahoo Fantasy API OAuth2 |
+| `YAHOO_CLIENT_SECRET` | Yahoo Fantasy API OAuth2 |
+| `YAHOO_TOKEN` | Cached Yahoo OAuth token (JSON), so the workflow can refresh without an interactive login |
+
 ## Setup
 
 Requires Yahoo Fantasy API OAuth2 credentials:
