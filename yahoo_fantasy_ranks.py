@@ -5,6 +5,7 @@ import sys
 import time
 import unicodedata
 import webbrowser
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
 
@@ -184,38 +185,61 @@ def main():
     args = parser.parse_args()
 
     players = read_csv(args.csv)
-    session = get_oauth_session()
-    results = []
-    
-    print(f"Searching for {len(players)} players...")
-    for i, p in enumerate(players, 1):
-        print(f"[{i}/{len(players)}] {p['name_raw']}... ", end="", flush=True)
-        
-        match = search_player(session, p["name_raw"], args.league)
-        
-        if not match:
-            print("NOT FOUND")
-            results.append({**p, "status": "not_found"})
-            continue
-        
-        ranks = get_player_ranks(session, args.league, match["player_key"])
-        
-        # Combine the original CSV row data with the new Yahoo metadata
-        final_entry = {
-            **p,
-            "preseason_rank": ranks["preseason_rank"],
-            "current_rank": ranks["current_rank"],
-            "fantasy_team": match.get("fantasy_team", "None"),
-            "yahoo_key": match["player_key"],
-            "status": "ok"
-        }
-        
-        print(f"Team: {final_entry['fantasy_team']} | O-Rank: {final_entry['preseason_rank']}")
-        results.append(final_entry)
+
+    # Everything that talks to the Yahoo API lives inside this try block.
+    # If the API is down/unauthorized/unreachable at any point, we bail out
+    # here WITHOUT touching the output file, so the existing JSON (and its
+    # last_updated date) is left exactly as it was. The script still exits
+    # successfully (no unhandled exception) so the CI job doesn't fail.
+    try:
+        session = get_oauth_session()
+        results = []
+
+        print(f"Searching for {len(players)} players...")
+        for i, p in enumerate(players, 1):
+            print(f"[{i}/{len(players)}] {p['name_raw']}... ", end="", flush=True)
+
+            match = search_player(session, p["name_raw"], args.league)
+
+            if not match:
+                print("NOT FOUND")
+                results.append({**p, "status": "not_found"})
+                continue
+
+            ranks = get_player_ranks(session, args.league, match["player_key"])
+
+            # Combine the original CSV row data with the new Yahoo metadata
+            final_entry = {
+                **p,
+                "preseason_rank": ranks["preseason_rank"],
+                "current_rank": ranks["current_rank"],
+                "fantasy_team": match.get("fantasy_team", "None"),
+                "yahoo_key": match["player_key"],
+                "status": "ok"
+            }
+
+            print(f"Team: {final_entry['fantasy_team']} | O-Rank: {final_entry['preseason_rank']}")
+            results.append(final_entry)
+
+    except YahooAuthError as e:
+        print(f"\n⚠️  Yahoo API rejected the request (auth error): {e}")
+        print(f"Leaving {args.out} unchanged so the last_updated date isn't touched.")
+        return
+    except requests.exceptions.RequestException as e:
+        print(f"\n⚠️  Yahoo API appears to be unreachable/down: {e}")
+        print(f"Leaving {args.out} unchanged so the last_updated date isn't touched.")
+        return
+    except Exception as e:
+        print(f"\n⚠️  Unexpected error while updating ranks: {e}")
+        print(f"Leaving {args.out} unchanged so the last_updated date isn't touched.")
+        return
+
+    last_updated = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    output = {"last_updated": last_updated, "players": results}
 
     with open(args.out, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-    print(f"\n✅ Results saved to {args.out}")
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    print(f"\n✅ Results saved to {args.out} (last_updated: {last_updated})")
 
 if __name__ == "__main__":
     main()

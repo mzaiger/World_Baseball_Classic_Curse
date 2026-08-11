@@ -68,11 +68,26 @@
     }
     .worse { background-color: #ff6b6b !important; }
     .better { background-color: #51cf66 !important; }
+    .stale-banner {
+        display: none;
+        max-width: 800px;
+        margin: 0 auto 15px auto;
+        background-color: #4d3800;
+        color: #ffd166;
+        border: 1px solid #ffd166;
+        border-radius: 4px;
+        padding: 10px 14px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-align: center;
+    }
 </style>
 </head>
 <body>
 
     <h1>World Baseball Classic Curse</h1>
+
+    <div id="staleBanner" class="stale-banner"></div>
 
     <div class="filter-container">
         <select id="fantasyFilter"><option value="">All Fantasy Teams</option></select>
@@ -98,7 +113,10 @@
         async function loadPlayerData() {
             try {
                 const response = await fetch('player_ranks.json');
-                allPlayerData = await response.json();
+                const data = await response.json();
+
+                allPlayerData = data.players || [];
+                checkStaleness(data.last_updated);
 
                 // Sort by preseason rank initially
                 allPlayerData.sort((a, b) => parseInt(a.preseason_rank) - parseInt(b.preseason_rank));
@@ -108,6 +126,23 @@
                 renderTable();
             } catch (error) {
                 console.error("Unable to load JSON:", error);
+            }
+        }
+
+        function checkStaleness(lastUpdated) {
+            const banner = document.getElementById('staleBanner');
+            if (!lastUpdated) return;
+
+            const updateDate = new Date(lastUpdated + 'T00:00:00Z');
+            const now = new Date();
+            const msPerDay = 24 * 60 * 60 * 1000;
+            const daysSince = Math.floor((Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - updateDate.getTime()) / msPerDay);
+
+            if (daysSince > 2) {
+                banner.textContent = `⚠️ API may be down — stats havn't updated in ${daysSince} days (last update: ${lastUpdated}).`;
+                banner.style.display = 'block';
+            } else {
+                banner.style.display = 'none';
             }
         }
 
