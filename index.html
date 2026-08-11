@@ -1,354 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home Run Derby Curse</title>
-<style>
-  :root {
-    --green: #2e7d32;
-    --yellow: #f9a825;
-    --orange: #ef6c00;
-    --red: #c62828;
-    --na: #4a4a55;
-    --bg: #12121a;
-    --card: #1e1e2a;
-    --text: #e8e8f0;
-    --muted: #9a9ab0;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Segoe UI", Arial, sans-serif;
-    padding: 24px 16px 60px;
-  }
-  header { max-width: 760px; margin: 0 auto 28px; text-align: center; }
-  h1 { font-size: 2.1rem; margin-bottom: 6px; }
-  h1 .big-trophy { filter: drop-shadow(0 0 6px rgba(255,215,0,.6)); }
-  .subtitle { color: var(--muted); margin-bottom: 18px; }
+import json
+import requests
+import time
+import os
+import re
+import unicodedata
+import datetime
 
-  .legend {
-    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
-    font-size: .82rem;
-  }
-  .legend span {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--card); padding: 5px 10px; border-radius: 20px;
-    border: 1px solid #2e2e40;
-  }
-  .chip { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
-  .chip.g { background: var(--green); } .chip.y { background: var(--yellow); }
-  .chip.o { background: var(--orange); } .chip.r { background: var(--red); }
-  .chip.n { background: var(--na); }
+def normalize_name(name):
+    """Normalizes a player's name for robust matching (removes accents, punctuation, Jr/Sr)."""
+    if not name: return ""
+    name = name.lower()
+    # Remove accents (e.g., José -> Jose, Ordóñez -> Ordonez)
+    name = ''.join(c for c in unicodedata.normalize('NFD', name) if unicodedata.category(c) != 'Mn')
+    # Remove punctuation except spaces
+    name = re.sub(r'[^\w\s]', '', name)
+    # Remove common suffixes
+    name = re.sub(r'\b(jr|sr|ii|iii|iv|v)\b', '', name)
+    # Collapse whitespace
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
 
-  main { max-width: 760px; margin: 0 auto; }
-  .year-card {
-    background: var(--card); border: 1px solid #2e2e40; border-radius: 12px;
-    margin-bottom: 22px; overflow: hidden;
-  }
-  .year-header {
-    background: linear-gradient(90deg, #26263a, #1e1e2a);
-    padding: 10px 18px; font-size: 1.25rem; font-weight: 700;
-    letter-spacing: 1px; border-bottom: 1px solid #2e2e40;
-  }
-  .cancelled { padding: 14px 18px; color: var(--muted); font-style: italic; }
+def get_player_id(derby_name, roster):
+    """Finds a player's ID from the roster for a single season."""
+    target = normalize_name(derby_name)
 
-  table { width: 100%; border-collapse: collapse; }
-  th {
-    font-size: .75rem; text-transform: uppercase; letter-spacing: .8px;
-    color: var(--muted); padding: 8px 6px; border-bottom: 1px solid #2e2e40;
-  }
-  td { padding: 7px 6px; text-align: center; border-bottom: 1px solid #26263a; }
-  tr:last-child td { border-bottom: none; }
+    # 1. Try exact match
+    for p in roster:
+        api_name = p.get("fullName", "")
+        api_normalized = normalize_name(api_name)
 
-  .hr-cell { width: 27%; font-weight: 700; font-size: 1.05rem; color: #fff; position: relative; }
-  .hr-cell.green  { background: var(--green); }
-  .hr-cell.yellow { background: var(--yellow); color: #1a1a1a; }
-  .hr-cell.orange { background: var(--orange); }
-  .hr-cell.red    { background: var(--red); }
-  .hr-cell.na     { background: var(--na); color: #cfcfe0; }
-  .hr-cell .info-btn { background: rgba(255,255,255,.92); color: #12121a; }
-  .hr-cell.yellow .info-btn { background: rgba(0,0,0,.75); color: #fff; }
+        if target == api_normalized:
+            # Ensure it's not a pitcher (Home Run Derby is for position players)
+            pos = p.get("primaryPosition", {}).get("abbreviation", "")
+            if pos != "P":
+                return p["id"], api_name
 
-  .name-cell { width: 46%; font-size: 1rem; color: var(--text); }
-  .name-cell .trophy { vertical-align: -3px; margin: 0 3px; }
+    # 2. Fallback: partial match (e.g. "Vladimir Guerrero" matching "Vladimir Guerrero Jr.")
+    for p in roster:
+        api_name = p.get("fullName", "")
+        api_normalized = normalize_name(api_name)
 
-  .info-btn {
-    width: 17px; height: 17px; border-radius: 50%; border: none;
-    font-size: 11px; font-weight: 700; font-style: italic; font-family: Georgia, serif;
-    cursor: pointer; margin-left: 7px; line-height: 1;
-    transition: transform .12s;
-  }
-  .info-btn:hover { transform: scale(1.25); }
+        if target in api_normalized or api_normalized in target:
+            pos = p.get("primaryPosition", {}).get("abbreviation", "")
+            if pos != "P":
+                return p["id"], api_name
 
-  /* Modal */
-  #overlay {
-    position: fixed; inset: 0; background: rgba(0,0,0,.7);
-    display: none; align-items: center; justify-content: center; z-index: 50;
-    padding: 20px;
-  }
-  #overlay.open { display: flex; }
-  #modal {
-    background: var(--card); border: 1px solid #3a3a52; border-radius: 12px;
-    max-width: 420px; width: 100%; max-height: 82vh; overflow-y: auto; padding: 18px;
-  }
-  #modal h2 { font-size: 1.05rem; margin-bottom: 4px; }
-  #modal .modal-sub { color: var(--muted); font-size: .85rem; margin-bottom: 12px; }
-  #modal table { border: 1px solid #2e2e40; border-radius: 8px; overflow: hidden; }
-  #modal td { text-align: left; padding: 5px 10px; font-size: .85rem; }
-  #modal td:first-child { color: var(--muted); text-transform: capitalize; }
-  #modal td:last-child { text-align: right; font-weight: 600; }
-  #modal-close {
-    float: right; background: none; border: none; color: var(--muted);
-    font-size: 1.3rem; cursor: pointer;
-  }
-  #modal-close:hover { color: #fff; }
+    return None, None
 
-  .loading, .error { text-align: center; color: var(--muted); padding: 40px 10px; }
-  .error { color: #ff8a80; }
-  .error code { background: #26263a; padding: 2px 6px; border-radius: 4px; color: #ffd54f; }
+def get_half_stats(player_id, year, sit_code):
+    """Fetches hitting splits for a specific situation code (preas or posas)."""
+    url = f"https://statsapi.mlb.com/api/v1/people/{player_id}/stats?stats=statSplits&group=hitting&season={year}&sitCodes={sit_code}"
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code != 200:
+            return None
 
-  .stale-banner {
-    display: none;
-    max-width: 760px; margin: 0 auto 18px;
-    background: rgba(198,40,40,.15); border: 1px solid var(--red);
-    color: #ffb4ae; border-radius: 10px;
-    padding: 10px 16px; font-size: .85rem; text-align: center;
-  }
-  .stale-banner.show { display: block; }
-</style>
-</head>
-<body>
+        data = response.json()
+        if 'stats' in data and len(data['stats']) > 0:
+            splits = data['stats'][0].get('splits', [])
+            if splits:
+                return splits[0].get('stat', {})
+    except Exception as e:
+        print(f"[-] Error fetching splits ({sit_code}) for ID {player_id} in {year}: {e}")
+    return None
 
-<header>
-  <h1><span class="big-trophy">🏆</span> Home Run Derby Curse</h1>
-  <p class="subtitle">Does winning (or just entering) the Derby wreck a hitter's swing? First-half HR vs. second-half HR for every contestant.</p>
-  <div class="legend">
-    <span><i class="chip g"></i> 2nd half ≥ 1st half (no curse)</span>
-    <span><i class="chip y"></i> 66–99% of 1st half</span>
-    <span><i class="chip o"></i> 33–66% of 1st half</span>
-    <span><i class="chip r"></i> 0–33% of 1st half (cursed)</span>
-    <span><i class="chip n"></i> No split data available</span>
-  </div>
-</header>
+def load_contestants_file():
+    """Contestants.json ships with a capital C, but be forgiving about casing."""
+    for candidate in ('Contestants.json', 'contestants.json'):
+        if os.path.exists(candidate):
+            with open(candidate, 'r', encoding='utf-8') as f:
+                return json.load(f)
+    raise FileNotFoundError("Contestants.json not found.")
 
-<div id="staleBanner" class="stale-banner"></div>
+def main():
+    output_file = 'derby_splits.json'
+    current_year = datetime.date.today().year
 
-<main id="content"><div class="loading">Loading data…</div></main>
+    derby_data = load_contestants_file()
 
-<div id="overlay">
-  <div id="modal">
-    <button id="modal-close">✕</button>
-    <h2 id="modal-title"></h2>
-    <div class="modal-sub" id="modal-sub"></div>
-    <table><tbody id="modal-body"></tbody></table>
-  </div>
-</div>
+    # Step 1: Find this year's contestants only
+    year_data = next(
+        (y for y in derby_data['contestants_by_year'] if y['year'] == current_year and y.get('contestants')),
+        None
+    )
 
-<script>
-const TROPHY_SVG = color =>
-  `<svg class="trophy" width="18" height="18" viewBox="0 0 24 24" fill="${color}" title="">` +
-  `<path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>`;
+    if not year_data:
+        print(f"No contestants listed for {current_year} yet. Nothing to update.")
+        return
 
-const GOLD = "#FFD700", SILVER = "#C0C0C0";
+    contestants = year_data['contestants']
 
-// Normalize names: trim, lowercase, strip accents & punctuation so
-// "Teoscar Hernández" matches "Teoscar Hernandez", "Cal Ripken, Jr." etc.
-function norm(s) {
-  return (s || "").toString()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9 ]/gi, "")
-    .replace(/\s+/g, " ").trim().toLowerCase();
-}
-const asArray = v => v == null ? [] : (Array.isArray(v) ? v : [v]);
-const prettyKey = k => k.replace(/([A-Z])/g, " $1").toLowerCase();
+    # Step 2: Fetch the roster for the current year only
+    print(f"Fetching MLB roster for {current_year}...")
+    roster_url = f"https://statsapi.mlb.com/api/v1/sports/1/players?season={current_year}&fields=people,id,fullName,nameFirstLast,nameSuffix,primaryPosition,abbreviation"
+    roster = []
+    api_ok = False
+    try:
+        r = requests.get(roster_url, timeout=15)
+        if r.status_code == 200:
+            roster = r.json().get("people", [])
+            api_ok = True
+            print(f"  [+] Loaded {len(roster)} players for {current_year}")
+        else:
+            print(f"  [-] Failed to load roster for {current_year}. Status: {r.status_code}")
+    except Exception as e:
+        print(f"  [-] Error fetching roster for {current_year}: {e}")
 
-let splitIndex = {};   // "year|normname" -> record
+    if not api_ok:
+        print(f"\n[-] MLB API appears to be down (roster fetch failed). "
+              f"Skipping update — leaving {output_file} untouched.")
+        return
 
-// Days after which a missed daily update is treated as "API may be down"
-// rather than just today's cron job not having run yet.
-const STALE_THRESHOLD_DAYS = 2;
+    # Step 3: Process this year's contestants
+    new_results = []
+    print(f"\nStarting to process {len(contestants)} derby appearances for {current_year}...\n")
 
-function checkFreshness(lastUpdated) {
-  const banner = document.getElementById("staleBanner");
-  if (!lastUpdated) return;
+    for i, player_name in enumerate(contestants, start=1):
+        print(f"[{i}/{len(contestants)}] Processing {player_name} ({current_year})...")
 
-  const last = new Date(lastUpdated + "T00:00:00Z");
-  const today = new Date();
-  const todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
-  const daysSince = Math.round((todayUTC - last) / 86400000);
+        player_id, api_name = get_player_id(player_name, roster)
 
-  if (daysSince >= STALE_THRESHOLD_DAYS) {
-    banner.textContent =
-      `⚠️ API may be down — stats hasn't updated in ${daysSince} days (last update: ${lastUpdated}).`;
-    banner.classList.add("show");
-  } else {
-    banner.classList.remove("show");
-  }
-}
+        player_record = {
+            "year": current_year,
+            "derby_name": player_name,
+            "api_name": api_name,
+            "player_id": player_id,
+            "1st_half": None,
+            "2nd_half": None,
+            "status": "Success"
+        }
 
-function secondHalfClass(first, second) {
-  if (first == null || second == null) return "na";
-  if (second >= first) return "green";   // equal or greater
-  if (first === 0) return "green";       // anything >= 0
-  const ratio = second / first;
-  if (ratio >= 0.66) return "yellow";
-  if (ratio >= 0.33) return "orange";
-  return "red";
-}
+        if player_id:
+            # preas = Pre All-Star (1st Half), posas = Post All-Star (2nd Half)
+            time.sleep(0.2)
+            first_half = get_half_stats(player_id, current_year, 'preas')
+            time.sleep(0.2)
+            second_half = get_half_stats(player_id, current_year, 'posas')
 
-function buildHalfCell(rec, half) {
-  const stat = rec ? rec[half] : null;
-  const hr = (stat && stat.homeRuns != null) ? stat.homeRuns : null;
-  const td = document.createElement("td");
-  td.className = "hr-cell";
+            if first_half or second_half:
+                player_record["1st_half"] = first_half
+                player_record["2nd_half"] = second_half
+            else:
+                player_record["status"] = "No split data available for this season"
+        else:
+            player_record["status"] = "Player not found in MLB API"
 
-  if (hr == null) {
-    td.classList.add("na");
-    td.innerHTML = `<span>–</span>`;
-    return td;
-  }
-  td.classList.add(half === "1st_half" ? "green" : secondHalfClass(rec["1st_half"]?.homeRuns ?? null, hr));
-  const num = document.createElement("span");
-  num.textContent = hr;
-  td.appendChild(num);
+        new_results.append(player_record)
 
-  const btn = document.createElement("button");
-  btn.className = "info-btn";
-  btn.textContent = "i";
-  btn.title = "View all " + (half === "1st_half" ? "1st" : "2nd") + " half stats";
-  btn.addEventListener("click", () => openModal(rec, half));
-  td.appendChild(btn);
-  return td;
-}
+    # Step 4: Merge into derby_splits.json, replacing only the current year's entries
+    # (only reached when the API call above succeeded)
+    existing_results = []
+    if os.path.exists(output_file):
+        with open(output_file, 'r', encoding='utf-8') as f:
+            existing_data = json.load(f)
+            # Support both the old bare-list format and the new
+            # {"last_updated": ..., "results": [...]} format.
+            existing_results = existing_data.get('results', []) if isinstance(existing_data, dict) else existing_data
 
-function openModal(rec, half) {
-  const stat = rec[half] || {};
-  const halfLabel = half === "1st_half" ? "1st Half (Pre All-Star)" : "2nd Half (Post All-Star)";
-  document.getElementById("modal-title").textContent = `${rec.derby_name.trim()} — ${rec.year}`;
-  document.getElementById("modal-sub").textContent = halfLabel +
-    (rec.api_name && rec.api_name.trim() !== rec.derby_name.trim()
-      ? "  ·  MLB API: " + rec.api_name.trim() : "");
-  const body = document.getElementById("modal-body");
-  body.innerHTML = "";
-  const keys = Object.keys(stat);
-  if (!keys.length) {
-    body.innerHTML = `<tr><td colspan="2">No stats available.</td></tr>`;
-  } else {
-    keys.forEach(k => {
-      const tr = document.createElement("tr");
-      const td1 = document.createElement("td"); td1.textContent = prettyKey(k);
-      const td2 = document.createElement("td"); td2.textContent = stat[k];
-      tr.appendChild(td1); tr.appendChild(td2);
-      body.appendChild(tr);
-    });
-  }
-  document.getElementById("overlay").classList.add("open");
-}
-document.getElementById("modal-close").addEventListener("click",
-  () => document.getElementById("overlay").classList.remove("open"));
-document.getElementById("overlay").addEventListener("click", e => {
-  if (e.target === e.currentTarget) e.currentTarget.classList.remove("open");
-});
+    carried_over = [r for r in existing_results if r.get('year') != current_year]
+    merged_results = carried_over + new_results
 
-function render(contestants) {
-  const content = document.getElementById("content");
-  content.innerHTML = "";
-  const years = [...contestants.contestants_by_year].sort((a, b) => b.year - a.year);
-
-  for (const y of years) {
-    const card = document.createElement("section");
-    card.className = "year-card";
-    const header = document.createElement("div");
-    header.className = "year-header";
-    header.textContent = y.year;
-    card.appendChild(header);
-
-    if (!y.contestants || !y.contestants.length) {
-      const div = document.createElement("div");
-      div.className = "cancelled";
-      div.textContent = "Cancelled — no Derby held this year.";
-      card.appendChild(div);
-      content.appendChild(card);
-      continue;
+    output_data = {
+        "last_updated": datetime.date.today().isoformat(),
+        "results": merged_results
     }
 
-    const winners = new Set(asArray(y.winner).map(norm));
-    const runners = new Set(asArray(y.runner_up).map(norm));
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(output_data, f, indent=4)
 
-    // Build rows, keeping original order as final tiebreaker
-    let rows = y.contestants.map((name, i) => {
-      const key = y.year + "|" + norm(name);
-      return {
-        name, i,
-        rec: splitIndex[key] || null,
-        winner: winners.has(norm(name)),
-        runner: runners.has(norm(name))
-      };
-    });
-    // Winner(s) first, runner(s)-up second, then anything
-    rows.sort((a, b) => (b.winner - a.winner) || (b.runner - a.runner) || (a.i - b.i));
+    print(f"\nDone! Updated {current_year} data ({len(new_results)} players) in {output_file}")
 
-    const table = document.createElement("table");
-    table.innerHTML =
-      `<thead><tr><th>1st Half HR</th><th>Player</th><th>2nd Half HR</th></tr></thead>`;
-    const tbody = document.createElement("tbody");
-
-    for (const r of rows) {
-      const tr = document.createElement("tr");
-
-      tr.appendChild(buildHalfCell(r.rec, "1st_half"));
-
-      const nameTd = document.createElement("td");
-      nameTd.className = "name-cell";
-      let icons = "";
-      if (r.winner) icons += `<span title="Winner">${TROPHY_SVG(GOLD)}</span>`;
-      if (r.runner) icons += `<span title="Runner-up">${TROPHY_SVG(SILVER)}</span>`;
-      nameTd.innerHTML = icons;
-      nameTd.appendChild(document.createTextNode(r.name.trim()));
-      tr.appendChild(nameTd);
-
-      tr.appendChild(buildHalfCell(r.rec, "2nd_half"));
-      tbody.appendChild(tr);
-    }
-
-    table.appendChild(tbody);
-    card.appendChild(table);
-    content.appendChild(card);
-  }
-}
-
-(async function init() {
-  const content = document.getElementById("content");
-  try {
-    const [contestants, splitsData] = await Promise.all([
-      fetch("Contestants.json?t=" + Date.now()).then(r => { if (!r.ok) throw new Error("Contestants.json"); return r.json(); }),
-      fetch("derby_splits.json?t=" + Date.now()).then(r => { if (!r.ok) throw new Error("derby_splits.json"); return r.json(); })
-    ]);
-
-    // derby_splits.json is {"last_updated": "YYYY-MM-DD", "results": [...]}.
-    // Fall back gracefully if an old bare-array file is ever served.
-    const splits = Array.isArray(splitsData) ? splitsData : (splitsData.results || []);
-    checkFreshness(Array.isArray(splitsData) ? null : splitsData.last_updated);
-
-    // Index split records by year + normalized name (derby name, with API name as fallback)
-    for (const rec of splits) {
-      const yr = parseInt(rec.year, 10);
-      if (rec.derby_name) splitIndex[yr + "|" + norm(rec.derby_name)] = rec;
-      if (rec.api_name) {
-        const k = yr + "|" + norm(rec.api_name);
-        if (!splitIndex[k]) splitIndex[k] = rec;
-      }
-    }
-    render(contestants);
-  } catch (err) {
-    content.innerHTML =
-      `<div class="error">Could not load ${err.message}.<br><br>` +
-      `Make sure both JSON files are in the same folder as this page, and serve it over HTTP, e.g.:<br>` +
-      `<code>python -m http.server 8000</code> &nbsp;then open&nbsp; <code>http://localhost:8000</code></div>`;
-  }
-})();
-</script>
-</body>
-</html>
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as e:
+        # Never let an unexpected error fail the GitHub Actions step —
+        # just skip this run and leave derby_splits.json as-is.
+        print(f"[-] Unexpected error, skipping this run: {e}")
